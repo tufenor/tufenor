@@ -20,7 +20,7 @@ Adoro trabalhar no frontend porque me permite combinar minha criatividade com ha
 
 # 📊 GitHub Stats:
 <img src="https://github-readme-stats-wheat-two-53.vercel.app/api?username=tufenor&theme=neon&hide_border=false&include_all_commits=false&count_private=false"  width="364px" />                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=tufenor&theme=neon&hide_border=false"  width="400px" />
-(https://cursos.alura.com.br/user/tufenor/fullCertificate/3b7b7641cecc853fae6e416e33022894)
+
 
 
 ![](https://github-readme-stats-wheat-two-53.vercel.app/api/top-langs/?username=tufenor&theme=neon&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
