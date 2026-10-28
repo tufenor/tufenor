@@ -70,3 +70,17 @@ e a skill de copywriting do repositório coreyhaines31/marketingskills (lida com
 - [ ] Taxas de saque por rede vêm de um comparativo de mai/2026 (eco.com). Conferir na página oficial de taxas da exchange escolhida.
 - [ ] Atestação BDO do 2º tri/2026 e tamanho do USDT (CoinMarketCap/DefiLlama): conferir em tether.to/transparency.
 - [ ] 90% dos fluxos em stablecoins: relatório da Chainalysis (jul/2024–jun/2025).
+
+# Ajustes pedidos pelo autor (28/10/2026)
+- Linhas “Fonte:” saíram das páginas e foram para o anexo automático “Fontes de todos os números” (final do PDF).
+- Capa e título: “E-book patriota · contra a censura da esquerda”.
+- Fontes preferidas daqui em diante: Poder360, Gazeta do Povo, Revista Oeste, Jovem Pan, InfoMoney, Exame e documentos oficiais.
+
+# Parte 4 — O Método USDT (42 páginas)
+## Pedir ao autor
+- [ ] Qual exchange no Brasil, qual exchange/P2P na Bolívia e qual banco você usa (4.5).
+- [ ] 4.18: período, capital, margem por operação, horas por semana, melhor e pior mês e extratos borrados.
+## Conferir antes de publicar
+- [ ] Res. BCB 584: se o gatilho de US$ 10 mil é por envio ou pela soma do dia (as fontes divergem).
+- [ ] Situação da minuta de IOF de 3,5% sobre cripto (sem decreto publicado até out/2026).
+- [ ] Limites de BISA, FIE e Unión/Yasta (vêm do escopo; confirmar nos sites dos bancos).
