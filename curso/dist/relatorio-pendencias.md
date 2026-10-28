@@ -113,3 +113,15 @@ e a skill de copywriting do repositório coreyhaines31/marketingskills (lida com
 - [ ] Código da stablecoin no IRPF (a maioria dos guias diz 03; um diz 10).
 - [ ] Regra de IR para venda de cripto em exchange/P2P no exterior (fontes divergem). Recomendado parecer de contador.
 - [ ] Data de vigência da DeCripto (IN RFB 2.291/2025).
+
+# Parte 7 — A nova vida na Bolívia (21 páginas)
+- Entrada, documentos do Brasil (apostila), residência Mercosul, cédula e NIT, mudança e pets (CVI), moradia e compra de imóvel, banco/chip/QR, carro (CNH, SOAT, inspeção, RUAT), saúde e plantão consular, escola, empresa, plano de 90 dias, comunidade e depoimento.
+## Pedir ao autor
+- [ ] Como foi a sua residência (tempo, custo, documentos pedidos em Cochabamba).
+- [ ] Banco onde abriu conta e o que pediram.
+- [ ] Grupos e igrejas de brasileiros em Cochabamba.
+- [ ] Depoimento de 1 página (7.13).
+## Conferir antes de publicar
+- [ ] Taxa da residência Mercosul (~450 UFV) e lista atual da DIGEMIG de cada cidade.
+- [ ] Prazo de direção com CNH + PID (fontes: 90 a 180 dias).
+- [ ] Quem paga o imposto de transferência de imóvel (3%) e a alíquota de transferência de veículos.
