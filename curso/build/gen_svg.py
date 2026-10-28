@@ -163,6 +163,73 @@ def esplanada():
                       f'<rect width="{W_}" height="{H_}" fill="url(#fade)"/></svg>')
     return svg
 
+def palm(x, y, h, color="#120404"):
+    """Palmeira imperial: tronco fino e copa em leque. (x,y) = base."""
+    top = y - h
+    o = [f'<path d="M{x-h*0.012},{y} L{x-h*0.006},{top} L{x+h*0.006},{top} L{x+h*0.012},{y} Z" fill="{color}"/>']
+    for ang, ln in [(-160, .28), (-130, .3), (-100, .22), (-80, .22), (-50, .3), (-20, .28), (-180, .22), (0, .22)]:
+        a = math.radians(ang)
+        ex, ey = x + math.cos(a) * h * ln, top + math.sin(a) * h * ln * 0.55 + h * 0.06
+        cx, cy = x + math.cos(a) * h * ln * 0.5, top - h * 0.07
+        o.append(f'<path d="M{x},{top} Q{cx},{cy} {ex},{ey}" stroke="{color}" stroke-width="{max(0.6, h*0.022)}" fill="none" stroke-linecap="round"/>')
+    return "".join(o)
+
+def avenida():
+    """Fundo da capa: avenida com palmeiras imperiais lotada de verde-amarelo, carro de som, céu de alerta."""
+    random.seed(42)
+    W_, H_, HZ, VX = 300, 425, 262, 205
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W_} {H_}" preserveAspectRatio="xMidYMid slice">',
+         '<defs><linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0000"/>'
+         '<stop offset=".35" stop-color="#3a0707"/><stop offset=".52" stop-color="#a8160f"/><stop offset=".615" stop-color="#ff7a1f"/></linearGradient>'
+         '<linearGradient id="fade2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity=".8"/>'
+         '<stop offset=".45" stop-color="#000" stop-opacity=".2"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>'
+         '<linearGradient id="tint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D7191C" stop-opacity=".0"/>'
+         '<stop offset="1" stop-color="#5a0000" stop-opacity=".35"/></linearGradient></defs>',
+         f'<rect width="{W_}" height="{H_}" fill="url(#sky2)"/>']
+    # nuvens
+    for cx, cy, r in [(60, 70, 40), (110, 55, 50), (170, 80, 36), (40, 130, 30), (95, 120, 42), (240, 150, 34), (270, 120, 28)]:
+        o.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#5c0c0c" opacity=".55"/>')
+    # árvores na linha do horizonte
+    for i in range(70):
+        x = random.uniform(0, W_); r = random.uniform(5, 13)
+        o.append(f'<circle cx="{x:.1f}" cy="{HZ - r*0.4:.1f}" r="{r:.1f}" fill="#160505"/>')
+    o.append(f'<rect x="0" y="{HZ}" width="{W_}" height="{H_-HZ}" fill="#3a2805"/>')
+    # palmeiras imperiais em perspectiva, dos dois lados da avenida
+    for side, base_x in [(1, 300), (-1, 120)]:
+        for k in range(9):
+            t = k / 9
+            x = base_x + (VX - base_x) * (1 - (1 - t) ** 1.6) * 0.9
+            y = 372 + (HZ + 4 - 372) * t
+            h = 165 * (1 - t) ** 1.3 + 12
+            o.append(palm(x, y, h))
+    # mar de gente: cabeças em perspectiva
+    cols = ["#FFDF00", "#FFDF00", "#009C3B", "#0b7a2f", "#2a1a0a", "#FFD60A", "#e8c800"]
+    for i in range(6500):
+        y = HZ + 2 + (H_ - HZ) * (random.random() ** 1.7)
+        t = (y - HZ) / (H_ - HZ)
+        x = random.uniform(-10, W_ + 10)
+        r = 0.7 + t * 3.6
+        o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.2f}" fill="{random.choice(cols)}"/>')
+    # bandeiras na multidão
+    for i in range(22):
+        y = random.uniform(HZ + 15, H_ - 40); t = (y - HZ) / (H_ - HZ); w = 6 + t * 26
+        x = random.uniform(0, W_ - w)
+        o.append(f'<line x1="{x:.1f}" y1="{y + w*0.7:.1f}" x2="{x:.1f}" y2="{y + w*1.5:.1f}" stroke="#222" stroke-width="{0.4 + t:.1f}"/>' + flag(x, y, w, wave=w * 0.12))
+    # carro de som (silhuetas de costas, sem rostos)
+    o.append('<g fill="#0a0a0a">'
+             '<path d="M-5,360 L95,345 L100,425 L-5,425 Z"/>'
+             '<rect x="-5" y="318" width="102" height="4" transform="rotate(-8 45 320)"/>')
+    for x, y, arm in [(18, 331, True), (40, 327, False), (62, 324, True), (82, 321, False)]:
+        o.append(f'<circle cx="{x}" cy="{y-24}" r="6"/><path d="M{x-9},{y+14} v-22 q0,-6 9,-6 q9,0 9,6 v22 z"/>')
+        if arm:
+            o.append(f'<line x1="{x+7}" y1="{y-6}" x2="{x+13}" y2="{y-34}" stroke="#0a0a0a" stroke-width="3.5" stroke-linecap="round"/>')
+    o.append('</g>')
+    o.append(flag(66, 276, 34, wave=4))
+    o.append('<line x1="66" y1="276" x2="64" y2="324" stroke="#0a0a0a" stroke-width="2"/>')
+    o.append(f'<rect width="{W_}" height="{H_}" fill="url(#tint)"/><rect width="{W_}" height="{H_}" fill="url(#fade2)"/>')
+    o.append('</svg>')
+    return "".join(o)
+
 files = {
     "crowd.svg": crowd(signs=[("BRASIL ACIMA DE TUDO", 140), ("LIBERDADE!", 460)]),
     "crowd-cover.svg": crowd(w=600, h=200, seed=3, flags=12, signs=[("MAIS 4 ANOS?", 470)], dark=True),
@@ -175,6 +242,7 @@ files = {
     "cars-vs.svg": cars_vs(),
     "salt-flat.svg": salt_flat(),
     "esplanada.svg": esplanada(),
+    "avenida.svg": avenida(),
 }
 for n, s in files.items():
     (OUT / n).write_text(s, encoding="utf-8")
