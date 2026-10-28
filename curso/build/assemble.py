@@ -111,7 +111,7 @@ def main():
     body = "\n".join(frame(p, i + 1) for i, p in enumerate(allp))
     DIST.mkdir(exist_ok=True)
     (DIST / "curso.html").write_text(
-        '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>LULA GANHOU. PRA ONDE IR? · E-book patriota, contra a censura da esquerda</title>'
+        '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>LULA GANHOU. PRA ONDE IR? · E-book patriota, contra a censura da esquerda · Patriota Anônimo</title><meta name="author" content="Patriota Anônimo">'
         f'<link rel="stylesheet" href="../style.css"></head><body>{body}</body></html>', encoding="utf-8")
     print(f"{len(allp)} páginas montadas ({n_toc} de índice)")
 

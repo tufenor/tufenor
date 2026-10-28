@@ -236,3 +236,4 @@ figcaption { font-size: 6.8pt; font-weight: 600; color: #444; margin-top: 1mm; }
 .cover .selo .s1 { font-size: 13pt; }
 .cover .selo .s2 { font-size: 4.9pt; }
 .cover .brand { left: 0; right: 0; bottom: 0; padding: 2.2mm 12mm; background: var(--black); }
+.box.br ul.check li::before { color: var(--br-yellow); }

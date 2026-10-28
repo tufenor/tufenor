@@ -1,5 +1,7 @@
 # LULA GANHOU. PRA ONDE IR? — curso (e-book A5)
 
+Autor: **Patriota Anônimo**. E-book patriota, contra a censura da esquerda.
+
 Build: `npm install && npm run build`
 
 - `src/*.html`: páginas (`<section class="page" data-sec data-part data-toc>`). `<!--SVG:nome-->` injeta `src/svg/nome.svg`.
