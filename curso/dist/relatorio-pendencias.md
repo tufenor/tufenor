@@ -84,3 +84,9 @@ e a skill de copywriting do repositório coreyhaines31/marketingskills (lida com
 - [ ] Res. BCB 584: se o gatilho de US$ 10 mil é por envio ou pela soma do dia (as fontes divergem).
 - [ ] Situação da minuta de IOF de 3,5% sobre cripto (sem decreto publicado até out/2026).
 - [ ] Limites de BISA, FIE e Unión/Yasta (vêm do escopo; confirmar nos sites dos bancos).
+
+# Parte 5 — Blindagem (21 páginas)
+- Os 12 golpes com “como funciona” e “defesa”, segurança da conta, celular, segurança física, golpes na Bolívia (ATT/FELCC), MED do Pix (80 dias) e checklist de 20 itens.
+## Conferir antes de publicar
+- [ ] Dados de golpes: GASA via Exame (R$ 21,2 bi), BC via Poder360 (Pix 2024) e InfoMoney (cripto ~R$ 40 bi em 5 anos; estimativa jornalística antiga).
+- [ ] Canal de denúncia online da FELCC: as fontes só confirmam a plataforma da ATT e a denúncia presencial.
