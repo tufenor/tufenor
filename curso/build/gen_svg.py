@@ -189,6 +189,15 @@ def avenida():
     # nuvens
     for cx, cy, r in [(60, 70, 40), (110, 55, 50), (170, 80, 36), (40, 130, 30), (95, 120, 42), (240, 150, 34), (270, 120, 28)]:
         o.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#5c0c0c" opacity=".55"/>')
+    # Jesus nas nuvens: silhueta discreta de braços abertos, formada por nuvem clara
+    o.append('<defs><filter id="blurJ" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.2"/></filter>'
+             '<radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd9a8" stop-opacity=".55"/>'
+             '<stop offset="1" stop-color="#ffd9a8" stop-opacity="0"/></radialGradient></defs>')
+    o.append('<g opacity=".5" filter="url(#blurJ)" fill="#ffe2c4" transform="translate(240,104) scale(.85) translate(-232,-128)">'
+             '<circle cx="232" cy="140" r="38" fill="url(#halo)"/>'
+             '<circle cx="232" cy="128" r="9"/>'
+             '<path d="M226,138 L238,138 L244,150 L290,146 L292,152 L246,160 L248,215 Q232,222 216,215 L218,160 L172,152 L174,146 L220,150 Z"/>'
+             '</g>')
     # árvores na linha do horizonte
     for i in range(70):
         x = random.uniform(0, W_); r = random.uniform(5, 13)
