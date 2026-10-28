@@ -246,3 +246,4 @@ figcaption { font-size: 6.8pt; font-weight: 600; color: #444; margin-top: 1mm; }
 .d-l { font-size: 8.4pt; margin: 0 0 1mm; }
 .d-v { font-size: 7pt; color: #555; margin: 0; }
 .d-qr svg { width: 22mm; height: 22mm; display: block; }
+.d-h a { color: inherit; text-decoration: none; }

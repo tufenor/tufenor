@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const FILE = path.join(ROOT, 'dist', 'curso.html');
+const FILE = path.join(ROOT, 'dist', process.env.BOOK_HTML || 'curso.html');
 const CROWDS = ['crowd-wide.svg', 'crowd.svg', 'crowd-cover.svg'].map(f => fs.readFileSync(path.join(ROOT, 'src', 'svg', f), 'utf8'));
 // Ganchos do escopo (Seção 3.4): cada número aqui tem fonte no corpo do curso
 const HOOKS = [

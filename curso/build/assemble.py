@@ -1,9 +1,13 @@
 """Junta os src/*.html na ordem, injeta barra de plantão, rodapé, numeração e índice.
 Saída: dist/curso.html (a partir dele saem o PDF e o Word)."""
-import re, html, math, pathlib
+import os, re, html, math, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC, DIST = ROOT / "src", ROOT / "dist"
+# Livro a montar: por padrão o curso; BOOK_FILES escolhe outros arquivos (ex.: o dossiê avulso)
+BOOK_FILES = os.environ.get("BOOK_FILES")
+BOOK_HTML = os.environ.get("BOOK_HTML", "curso.html")
+BOOK_TITLE = os.environ.get("BOOK_TITLE", "LULA GANHOU. PRA ONDE IR? · E-book patriota, contra a censura da esquerda · Patriota Anônimo")
 SEC_RE = re.compile(r'<section class="page([^"]*)"([^>]*)>(.*?)</section>', re.S)
 ATTR_RE = re.compile(r'data-([\w-]+)="([^"]*)"')
 TOC_PER_PAGE = 21
@@ -32,7 +36,8 @@ def svg(m):
 
 def load_pages():
     pages = []
-    for f in sorted(SRC.glob("[0-9][0-9]-*.html")):
+    files = [SRC / f for f in BOOK_FILES.split(",")] if BOOK_FILES else sorted(SRC.glob("[0-9][0-9]-*.html"))
+    for f in files:
         text = re.sub(r"<!--SVG:([\w-]+)-->", svg, f.read_text(encoding="utf-8"))
         text = re.sub(r"<!--QR:(\S+?)-->", qr, text)
         for cls, attrs, inner in SEC_RE.findall(text):
@@ -104,14 +109,17 @@ def frame(p, num):
 def main():
     pages = load_pages()
     # o índice entra logo depois do marcador data-toc-here
-    idx = next(i for i, p in enumerate(pages) if "toc-here" in p["attrs"])
+    idx = next((i for i, p in enumerate(pages) if "toc-here" in p["attrs"]), None)
     pull_sources(pages)
-    before, after = pages[:idx + 1], pages[idx + 1:]
-    after = after + fontes_pages(pages)
-    # dois passes: primeiro descobrimos quantas páginas o índice ocupa
-    n_toc = len(toc_pages(toc_entries(after, 0)))
-    entries = toc_entries(after, len(before) + n_toc)
-    allp = before + toc_pages(entries) + after
+    if idx is None:  # livro sem índice (ex.: dossiê avulso)
+        allp, n_toc = pages + fontes_pages(pages), 0
+    else:
+        before, after = pages[:idx + 1], pages[idx + 1:]
+        after = after + fontes_pages(pages)
+        # dois passes: primeiro descobrimos quantas páginas o índice ocupa
+        n_toc = len(toc_pages(toc_entries(after, 0)))
+        entries = toc_entries(after, len(before) + n_toc)
+        allp = before + toc_pages(entries) + after
     for i, p in enumerate(allp):
         p["num"] = i + 1
     for p in allp:
@@ -119,8 +127,8 @@ def main():
             p["inner"] = render_fontes(p)
     body = "\n".join(frame(p, i + 1) for i, p in enumerate(allp))
     DIST.mkdir(exist_ok=True)
-    (DIST / "curso.html").write_text(
-        '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>LULA GANHOU. PRA ONDE IR? · E-book patriota, contra a censura da esquerda · Patriota Anônimo</title><meta name="author" content="Patriota Anônimo">'
+    (DIST / BOOK_HTML).write_text(
+        f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>{html.escape(BOOK_TITLE)}</title><meta name="author" content="Patriota Anônimo">'
         f'<link rel="stylesheet" href="../style.css"></head><body>{body}</body></html>', encoding="utf-8")
     print(f"{len(allp)} páginas montadas ({n_toc} de índice)")
 

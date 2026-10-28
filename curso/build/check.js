@@ -4,7 +4,7 @@ const path = require('path');
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  await page.goto('file://' + path.resolve(__dirname, '..', 'dist', 'curso.html'));
+  await page.goto('file://' + path.resolve(__dirname, '..', 'dist', process.env.BOOK_HTML || 'curso.html'));
   await page.evaluate(() => document.fonts.ready);
   await page.emulateMedia({ media: 'print' });
   const res = await page.evaluate(() => {

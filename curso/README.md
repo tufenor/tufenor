@@ -2,7 +2,7 @@
 
 Autor: **Patriota Anônimo**. E-book patriota, contra a censura da esquerda.
 
-Build: `npm install && npm run build`
+Build: `npm install && npm run build` (curso) · `npm run build:dossie` (dossiê avulso) · `npm run build:all` (os dois)
 
 - `src/*.html`: páginas (`<section class="page" data-sec data-part data-toc>`). `<!--SVG:nome-->` injeta `src/svg/nome.svg`.
 - `build/gen_svg.py`: ilustrações próprias (multidão verde-amarela, bandeira, mapa, “proibido comunismo”).

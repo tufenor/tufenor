@@ -98,3 +98,11 @@ e a skill de copywriting do repositório coreyhaines31/marketingskills (lida com
 - [ ] Abrir os 19 links (a rede desta sessão bloqueia esses sites; vieram de busca em 28/10/2026).
 - [ ] O título do item da Blocktrends é descritivo (o título exato da matéria não apareceu na busca).
 - [ ] [LINK DO CURSO] na página de WhatsApp.
+
+# Dossiê avulso (produto separado)
+- `npm run build:dossie` gera `dist/Dossie-Mais-4-Anos-em-Manchetes.pdf` e `.docx` (13 páginas): capa própria, as páginas do B7 e uma contracapa que leva ao curso.
+- As 19 manchetes são links clicáveis no PDF e no Word, além do QR code.
+- `npm run build:all` gera o curso e o dossiê.
+## Pendente
+- [ ] Preço do dossiê avulso e onde ele entra no checkout (order bump ou produto separado).
+- [ ] [LINK DO CURSO] na contracapa e na página de WhatsApp.

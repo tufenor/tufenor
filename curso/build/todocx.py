@@ -1,9 +1,9 @@
 """HTML → Word via pandoc (remove SVG decorativo, barra, rodapé e chamadas de preenchimento)."""
-import subprocess, pathlib
+import os, subprocess, pathlib
 from bs4 import BeautifulSoup
 
 DIST = pathlib.Path(__file__).resolve().parent.parent / "dist"
-soup = BeautifulSoup((DIST / "curso.html").read_text(encoding="utf-8"), "lxml")
+soup = BeautifulSoup((DIST / os.environ.get("BOOK_HTML", "curso.html")).read_text(encoding="utf-8"), "lxml")
 for sel in ["svg", ".topbar", ".footer", ".filler", ".stamp", ".tape"]:
     for el in soup.select(sel):
         el.decompose()
@@ -13,6 +13,6 @@ for page in soup.select("section.page"):
 tmp = DIST / "_docx.html"
 tmp.write_text(str(soup), encoding="utf-8")
 subprocess.run(["pandoc", str(tmp), "-f", "html", "-t", "docx",
-                "-o", str(DIST / "LULA-GANHOU-Curso-Completo.docx"), "--resource-path", str(DIST)], check=True)
+                "-o", str(DIST / (os.environ.get("BOOK_OUT", "LULA-GANHOU-Curso-Completo") + ".docx")), "--resource-path", str(DIST)], check=True)
 tmp.unlink()
 print("DOCX gerado")
