@@ -19,6 +19,14 @@ TICKER = [
     "USDT x remessa: até 6% a mais no seu bolso",
 ]
 
+def qr(m):
+    """<!--QR:url--> vira um QR code em SVG inline."""
+    import qrcode, qrcode.image.svg, io
+    img = qrcode.make(m.group(1), image_factory=qrcode.image.svg.SvgPathImage, border=1)
+    buf = io.BytesIO(); img.save(buf)
+    s = buf.getvalue().decode("utf-8")
+    return s[s.index("<svg"):]
+
 def svg(m):
     return (SRC / "svg" / f"{m.group(1)}.svg").read_text(encoding="utf-8")
 
@@ -26,6 +34,7 @@ def load_pages():
     pages = []
     for f in sorted(SRC.glob("[0-9][0-9]-*.html")):
         text = re.sub(r"<!--SVG:([\w-]+)-->", svg, f.read_text(encoding="utf-8"))
+        text = re.sub(r"<!--QR:(\S+?)-->", qr, text)
         for cls, attrs, inner in SEC_RE.findall(text):
             pages.append({"cls": cls.strip(), "attrs": dict(ATTR_RE.findall(attrs)), "inner": inner})
     return pages

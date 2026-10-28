@@ -237,3 +237,12 @@ figcaption { font-size: 6.8pt; font-weight: 600; color: #444; margin-top: 1mm; }
 .cover .selo .s2 { font-size: 4.9pt; }
 .cover .brand { left: 0; right: 0; bottom: 0; padding: 2.2mm 12mm; background: var(--black); }
 .box.br ul.check li::before { color: var(--br-yellow); }
+/* dossiê (Bônus B7) */
+.dossie { display: grid; grid-template-columns: 30mm 1fr 22mm; gap: 3mm; align-items: center; border-top: .6mm solid var(--black); padding: 2.5mm 0; }
+.d-num { background: var(--br-green); color: var(--br-yellow); font-family: "Anton"; font-size: 14pt; line-height: 1; padding: 2mm; text-align: center; }
+.d-num.red { background: var(--red); color: var(--white); }
+.d-tag { display: block; font-size: 7pt; letter-spacing: .08em; color: var(--white); margin-bottom: 1mm; }
+.d-h { font-weight: 800; font-size: 9.6pt; line-height: 1.2; margin: 0 0 1mm; }
+.d-l { font-size: 8.4pt; margin: 0 0 1mm; }
+.d-v { font-size: 7pt; color: #555; margin: 0; }
+.d-qr svg { width: 22mm; height: 22mm; display: block; }

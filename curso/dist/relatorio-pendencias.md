@@ -90,3 +90,11 @@ e a skill de copywriting do repositório coreyhaines31/marketingskills (lida com
 ## Conferir antes de publicar
 - [ ] Dados de golpes: GASA via Exame (R$ 21,2 bi), BC via Poder360 (Pix 2024) e InfoMoney (cripto ~R$ 40 bi em 5 anos; estimativa jornalística antiga).
 - [ ] Canal de denúncia online da FELCC: as fontes só confirmam a plataforma da ATT e a denúncia presencial.
+
+# Bônus B7 — Dossiê: mais 4 anos em manchetes (10 páginas)
+- 12 manchetes “já aconteceu” e 7 “o que vem por aí” (projeções marcadas), de Gazeta do Povo, Poder360, Revista Oeste, Jovem Pan e Blocktrends, cada uma com QR code do link.
+- Versão de 1 página para WhatsApp com 6 números e o CTA do curso.
+## Conferir antes de publicar
+- [ ] Abrir os 19 links (a rede desta sessão bloqueia esses sites; vieram de busca em 28/10/2026).
+- [ ] O título do item da Blocktrends é descritivo (o título exato da matéria não apareceu na busca).
+- [ ] [LINK DO CURSO] na página de WhatsApp.
