@@ -19,3 +19,11 @@ O autor liberou o que a Seção 3.2/3.4 v1.2 proibia: Bolsonaro citado pelo nome
 e o socialismo/comunismo tratado como ameaça. O autor assume o risco de plataforma (Hotmart/Meta).
 Continua fora (decisão do curso, não do autor): narrativa de fraude ou de “eleição roubada”, fotos de pessoas
 reais (todas as ilustrações são próprias, em SVG) e qualquer número sem fonte.
+
+## Revisão editorial (rodada 2)
+Skills usadas: marketing:content-creation (fórmulas de manchete e gancho), design:design-critique (hierarquia e espaço)
+e a skill de copywriting do repositório coreyhaines31/marketingskills (lida como referência; a instalação automática foi bloqueada nesta sessão).
+- Manchetes reescritas com número concreto ("130.060% de inflação: o recibo do socialismo", "R$ 13 mil por 1 quarto em Miami").
+- Novos componentes de tabloide/TV: carimbos (URGENTE, ALERTA, CHOCANTE), citações-destaque, tarja "lower third" e letreiro "ÚLTIMAS" no rodapé.
+- O letreiro só usa fatos com fonte no corpo do curso.
+- Tipografia maior (corpo 10,6 pt; títulos 31/21 pt) e páginas sem o vazio de 30–40% no pé.

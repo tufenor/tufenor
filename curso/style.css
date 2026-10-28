@@ -26,7 +26,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 @page { size: 148mm 210mm; margin: 0; }
 html, body { background: #777; }
-body { font-family: "Archivo", sans-serif; font-size: 9.6pt; line-height: 1.38; color: var(--ink); }
+body { font-family: "Archivo", sans-serif; font-size: 10.6pt; line-height: 1.4; color: var(--ink); }
 
 /* ---------- página ---------- */
 .page {
@@ -54,9 +54,9 @@ body { font-family: "Archivo", sans-serif; font-size: 9.6pt; line-height: 1.38; 
 
 /* ---------- tipografia ---------- */
 h1, h2, h3, .anton { font-family: "Anton"; font-weight: 400; text-transform: uppercase; line-height: 1.02; letter-spacing: .01em; }
-h1 { font-size: 26pt; margin-bottom: 3mm; }
-h2 { font-size: 16pt; margin: 0 0 2.5mm; }
-h3 { font-size: 11.5pt; margin: 3mm 0 1.5mm; }
+h1 { font-size: 31pt; margin-bottom: 3mm; }
+h2 { font-size: 21pt; margin: 0 0 2.5mm; }
+h3 { font-size: 13.5pt; margin: 3mm 0 1.5mm; }
 .kicker { display: inline-block; font-family: "Anton"; font-size: 8pt; text-transform: uppercase; letter-spacing: .08em;
   background: var(--red); color: var(--white); padding: .6mm 2mm; margin-bottom: 2mm; }
 .kicker.green { background: var(--br-green); }
@@ -67,9 +67,9 @@ strong { font-weight: 800; }
 mark, .hl { background: var(--yellow); padding: 0 .6mm; color: var(--black); }
 .big { font-family: "Anton"; font-size: 34pt; line-height: 1; }
 .red-t { color: var(--red); } .green-t { color: var(--br-green); } .teth-t { color: var(--teth); }
-small, .src { display: block; font-size: 6.4pt; color: #555; line-height: 1.3; margin-top: 2mm; }
+small, .src { display: block; font-size: 6.8pt; color: #555; line-height: 1.3; margin-top: 2mm; }
 .src::before { content: "Fonte: "; font-weight: 800; }
-.lead { font-size: 11pt; font-weight: 600; }
+.lead { font-size: 12.5pt; font-weight: 800; }
 
 /* ---------- caixas ---------- */
 .box { background: var(--gray); padding: 3mm 3.5mm; margin: 2.5mm 0; border-left: 1.6mm solid var(--black); }
@@ -102,7 +102,7 @@ ul.x li { padding: .8mm 0 .8mm 6.5mm; position: relative; }
 ul.x li::before { content: "✖"; position: absolute; left: 0; color: var(--red); font-weight: 800; }
 
 /* ---------- tabelas ---------- */
-table { width: 100%; border-collapse: collapse; margin: 2mm 0; font-size: 8.3pt; }
+table { width: 100%; border-collapse: collapse; margin: 2mm 0; font-size: 9.4pt; }
 th { background: var(--black); color: var(--white); font-family: "Anton"; font-weight: 400; text-transform: uppercase; letter-spacing: .03em;
   text-align: left; padding: 1.4mm 1.8mm; font-size: 8pt; }
 td { padding: 1.3mm 1.8mm; border-bottom: .3mm solid #bbb; vertical-align: top; }
@@ -117,8 +117,8 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
 .split .good { background: #E1F5E8; border-top: 1.5mm solid var(--br-green); }
 .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5mm; margin: 2.5mm 0; }
 .stat { background: var(--black); color: var(--white); padding: 2.5mm; text-align: center; }
-.stat .v { font-family: "Anton"; font-size: 20pt; color: var(--yellow); line-height: 1; display: block; }
-.stat .l { font-size: 7pt; font-weight: 600; display: block; margin-top: 1mm; }
+.stat .v { font-family: "Anton"; font-size: 25pt; color: var(--yellow); line-height: 1; display: block; }
+.stat .l { font-size: 8pt; font-weight: 600; display: block; margin-top: 1mm; }
 .stat.red { background: var(--red); } .stat.red .v { color: var(--white); }
 .stat.green { background: var(--br-green); } .stat.green .v { color: var(--br-yellow); }
 .formula { font-family: "JetBrains Mono"; background: var(--black); color: var(--teth); padding: 2.5mm 3mm; font-size: 8.5pt; margin: 2mm 0; }
@@ -180,3 +180,21 @@ figcaption { font-size: 6.8pt; font-weight: 600; color: #444; margin-top: 1mm; }
 .toc li .pg { font-family: "Anton"; }
 
 .pending { background: #FFF3B0; border: .5mm dashed #B08900; padding: 1mm 2mm; font-size: 7.5pt; font-weight: 800; color: #6B5200; display: inline-block; }
+
+/* ---------- tabloide / TV ---------- */
+.content { }
+.stamp { position: absolute; top: 5mm; right: 9mm; border: .9mm solid var(--red); color: var(--red); font-family: "Anton";
+  font-size: 12pt; letter-spacing: .08em; padding: .6mm 2.5mm; transform: rotate(7deg); background: rgba(255,255,255,.85); z-index: 2; }
+.stamp.green { border-color: var(--br-green); color: var(--br-green); }
+.pull { font-family: "Anton"; font-size: 19pt; line-height: 1.05; text-transform: uppercase; border-top: 1.4mm solid var(--black);
+  border-bottom: .5mm solid var(--black); padding: 3mm 0 3mm 11mm; margin: 4mm 0; position: relative; }
+.pull::before { content: "“"; position: absolute; left: 0; top: -1mm; font-size: 46pt; color: var(--red); line-height: 1; }
+.pull .by { display: block; font-family: "Archivo"; font-weight: 800; font-size: 7.5pt; color: #555; text-transform: none; margin-top: 1.5mm; }
+.pull.green::before { color: var(--br-green); }
+.lower { display: flex; margin: 3mm 0; }
+.lower .lbl { background: var(--red); color: var(--white); font-family: "Anton"; font-size: 11pt; padding: 2mm 3mm; display: flex; align-items: center; }
+.lower .txt { background: var(--black); color: var(--white); font-family: "Anton"; text-transform: uppercase; font-size: 13pt; padding: 2mm 3mm; flex: 1; line-height: 1.05; }
+.lower .txt mark { color: var(--black); }
+.footer .tick { flex: 1; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-right: 3mm; font-size: 7.4pt; }
+.footer .tick b { background: var(--red); color: var(--white); font-family: "Anton"; font-weight: 400; padding: .4mm 1.6mm; margin-right: 1.5mm; letter-spacing: .05em; }
+.sub-h { font-size: 11pt; font-weight: 600; color: #333; margin: -1mm 0 3mm; }

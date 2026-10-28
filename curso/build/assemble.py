@@ -7,6 +7,17 @@ SRC, DIST = ROOT / "src", ROOT / "dist"
 SEC_RE = re.compile(r'<section class="page([^"]*)"([^>]*)>(.*?)</section>', re.S)
 ATTR_RE = re.compile(r'data-([\w-]+)="([^"]*)"')
 TOC_PER_PAGE = 26
+# letreiro de TV no rodapé: só fatos com fonte no corpo do curso
+TICKER = [
+    "IOF de 3,5% nas remessas, no cartão e no dinheiro vivo",
+    "Dívida pública passa de R$ 11 trilhões",
+    "Arrecadação federal recorde: R$ 2,9 trilhões em 2025",
+    "43 medidas aumentaram a carga até mar/2026",
+    "Bolívia: dólar oficial vai de Bs 6,96 para Bs 12,02",
+    "Até R$ 450 bilhões de ajuste fiscal a partir de 2027",
+    "Bolívia elege a centro-direita e encerra 20 anos de MAS",
+    "USDT x remessa: até 6% a mais no seu bolso",
+]
 
 def svg(m):
     return (SRC / "svg" / f"{m.group(1)}.svg").read_text(encoding="utf-8")
@@ -42,7 +53,7 @@ def frame(p, num):
     a, full = p["attrs"], "full" in p["cls"].split()
     bar = "" if full else (f'<div class="topbar"><span><span class="live">Plantão</span>{html.escape(a.get("part", ""))}</span>'
                            f'<span class="sec">{html.escape(a.get("sec", ""))}</span></div>')
-    foot = "" if full else (f'<div class="footer"><span><span class="flagdot"></span>LULA GANHOU. PRA ONDE IR?</span>'
+    foot = "" if full else (f'<div class="footer"><span class="tick"><span class="flagdot"></span><b>ÚLTIMAS</b>{TICKER[num % len(TICKER)]}</span>'
                             f'<span class="num">{num}</span></div>')
     return f'<section class="page {p["cls"]}" data-num="{num}">{bar}<div class="content">{p["inner"]}</div>{foot}</section>'
 
