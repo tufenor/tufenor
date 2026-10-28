@@ -125,3 +125,11 @@ e a skill de copywriting do repositório coreyhaines31/marketingskills (lida com
 - [ ] Taxa da residência Mercosul (~450 UFV) e lista atual da DIGEMIG de cada cidade.
 - [ ] Prazo de direção com CNH + PID (fontes: 90 a 180 dias).
 - [ ] Quem paga o imposto de transferência de imóvel (3%) e a alíquota de transferência de veículos.
+
+# Parte 8 — Outros países (10 páginas)
+- Comparativo dos 6 destinos; Paraguai, Argentina, Uruguai, Portugal e EUA (moeda, residência, governo, prós e contras); fechamento “Por que a Bolívia continua sendo a número 1”.
+## Conferir antes de publicar / falta fonte
+- [ ] Custo de vida e aluguel no Paraguai (sem fonte confiável; ficou de fora).
+- [ ] Resolução DNIT 47/2026 (Paraguai) vem de fonte secundária.
+- [ ] Renda mínima da residência Mercosul no Uruguai (fontes divergem) e prorrogação na Argentina (fontes divergem).
+- [ ] Taxa de integridade de US$ 250 dos EUA: confirmar se já está em vigor.

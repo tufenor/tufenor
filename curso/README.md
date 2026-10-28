@@ -11,4 +11,4 @@ Build: `npm install && npm run build` (curso) · `npm run build:dossie` (dossiê
 - `build/check.js`: falha se algum conteúdo chegar a menos de 4 mm do rodapé.
 - `build/render.js`: PDF A5. `build/todocx.py`: Word via pandoc.
 
-Status: Pré-textual + Partes 1 a 7 + Bônus B7 prontos (213 páginas). Próxima: Parte 8, Bônus B1–B6, Bônus B1–B6, Bônus e Anexos.
+Status: Pré-textual + Partes 1 a 8 + Bônus B7 prontos (224 páginas). Próximos: Bônus B1–B6, anexos e kit de vendas, Bônus B1–B6, Bônus e Anexos.
