@@ -1,12 +1,18 @@
-"""HTML → Word via pandoc (remove SVG decorativo, barra e rodapé)."""
-import re, subprocess, pathlib
+"""HTML → Word via pandoc (remove SVG decorativo, barra, rodapé e chamadas de preenchimento)."""
+import subprocess, pathlib
+from bs4 import BeautifulSoup
+
 DIST = pathlib.Path(__file__).resolve().parent.parent / "dist"
-h = (DIST / "curso.html").read_text(encoding="utf-8")
-h = re.sub(r"<svg.*?</svg>", "", h, flags=re.S)
-h = re.sub(r'<div class="(topbar|footer)">.*?</div></div>|<div class="(topbar|footer)">.*?</span></div>', "", h, flags=re.S)
-h = re.sub(r'<section class="page[^"]*"[^>]*>', '<section><hr/>', h)
+soup = BeautifulSoup((DIST / "curso.html").read_text(encoding="utf-8"), "lxml")
+for sel in ["svg", ".topbar", ".footer", ".filler", ".stamp", ".tape"]:
+    for el in soup.select(sel):
+        el.decompose()
+# cada página vira uma seção separada por linha horizontal
+for page in soup.select("section.page"):
+    page.insert(0, soup.new_tag("hr"))
 tmp = DIST / "_docx.html"
-tmp.write_text(h, encoding="utf-8")
-subprocess.run(["pandoc", str(tmp), "-f", "html", "-t", "docx", "-o", str(DIST / "LULA-GANHOU-Curso-Completo.docx")], check=True)
+tmp.write_text(str(soup), encoding="utf-8")
+subprocess.run(["pandoc", str(tmp), "-f", "html", "-t", "docx",
+                "-o", str(DIST / "LULA-GANHOU-Curso-Completo.docx"), "--resource-path", str(DIST)], check=True)
 tmp.unlink()
 print("DOCX gerado")

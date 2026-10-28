@@ -52,3 +52,7 @@ e a skill de copywriting do repositório coreyhaines31/marketingskills (lida com
 
 ## Build
 - Novo passo `build/fill.js`: mede o espaço livre de cada página e injeta uma chamada de tabloide (gancho do escopo + multidão verde-amarela). Nenhum número novo entra por ele.
+
+## Fotos e preços do autor (recebidos)
+- [x] Almoço Bs 27 e jantar com vinho Bs 120 por pessoa (La Cantonata, Cochabamba): 2 páginas novas em 2.5 com 4 fotos (sem rostos). O EXIF das fotos foi removido, inclusive a localização GPS.
+- Correção: o Word (.docx) saía quase vazio por um erro no conversor. Agora sai completo, com tabelas e fotos.
