@@ -212,3 +212,4 @@ figcaption { font-size: 6.8pt; font-weight: 600; color: #444; margin-top: 1mm; }
 .photos .price { position: absolute; left: 1.5mm; top: 1.5mm; background: var(--red); color: var(--white); font-family: "Anton"; font-size: 13pt; padding: .4mm 2mm; }
 .photos .price.g { background: var(--br-green); }
 .photos figcaption { font-size: 6.8pt; margin-top: .8mm; }
+.stamp ~ h1, .stamp ~ h2 { padding-right: 24mm; }

@@ -6,7 +6,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC, DIST = ROOT / "src", ROOT / "dist"
 SEC_RE = re.compile(r'<section class="page([^"]*)"([^>]*)>(.*?)</section>', re.S)
 ATTR_RE = re.compile(r'data-([\w-]+)="([^"]*)"')
-TOC_PER_PAGE = 26
+TOC_PER_PAGE = 21
 # letreiro de TV no rodapé: só fatos com fonte no corpo do curso
 TICKER = [
     "IOF de 3,5% nas remessas, no cartão e no dinheiro vivo",
@@ -46,7 +46,7 @@ def toc_pages(entries):
             f'<li class="{lvl}"><span>{html.escape(t)}</span><span class="d"></span><span class="pg">{pg}</span></li>'
             for lvl, t, pg in entries[k * TOC_PER_PAGE:(k + 1) * TOC_PER_PAGE])
         title = '<span class="kicker black">Índice</span><h1>O que tem aqui dentro</h1>' if k == 0 else ""
-        res.append({"cls": "", "attrs": {"sec": "Índice", "part": "Pré-textual"}, "inner": f'{title}<ul class="toc">{items}</ul>'})
+        res.append({"cls": "nofill", "attrs": {"sec": "Índice", "part": "Pré-textual"}, "inner": f'{title}<ul class="toc">{items}</ul>'})
     return res
 
 def frame(p, num):

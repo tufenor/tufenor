@@ -9,4 +9,4 @@ Build: `npm install && npm run build`
 - `build/check.js`: falha se algum conteúdo chegar a menos de 4 mm do rodapé.
 - `build/render.js`: PDF A5. `build/todocx.py`: Word via pandoc.
 
-Status: Pré-textual + Partes 1 e 2 prontas (60 páginas). Próximas: Partes 3 a 8, Bônus e Anexos.
+Status: Pré-textual + Partes 1 a 3 prontas (92 páginas). Próximas: Partes 4 a 8, Bônus e Anexos.

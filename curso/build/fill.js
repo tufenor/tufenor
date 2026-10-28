@@ -6,7 +6,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const FILE = path.join(ROOT, 'dist', 'curso.html');
-const CROWD = fs.readFileSync(path.join(ROOT, 'src', 'svg', 'crowd-wide.svg'), 'utf8');
+const CROWDS = ['crowd-wide.svg', 'crowd.svg', 'crowd-cover.svg'].map(f => fs.readFileSync(path.join(ROOT, 'src', 'svg', f), 'utf8'));
 // Ganchos do escopo (Seção 3.4): cada número aqui tem fonte no corpo do curso
 const HOOKS = [
   ['MAIS 4 ANOS', 'Você vai ficar?'],
@@ -29,7 +29,7 @@ const HOOKS = [
   await page.goto('file://' + FILE);
   await page.evaluate(() => document.fonts.ready);
   await page.emulateMedia({ media: 'print' });
-  const n = await page.evaluate(({ HOOKS, CROWD }) => {
+  const n = await page.evaluate(({ HOOKS, CROWDS }) => {
     const MM = 96 / 25.4;
     let k = 0, filled = 0;
     const free = p => {
@@ -46,7 +46,7 @@ const HOOKS = [
       const box = document.createElement('div');
       box.className = 'filler';
       let html = `<div class="lower"><span class="lbl">${lbl}</span><span class="txt">${txt}</span></div>`;
-      if (f >= 58) html = `<div class="crowdband">${CROWD}</div>` + html;
+      if (f >= 58) html = `<div class="crowdband">${CROWDS[k % CROWDS.length]}</div>` + html;
       box.innerHTML = html;
       const src = p.querySelector('.content > small.src:last-child');
       src ? p.querySelector('.content').insertBefore(box, src) : p.querySelector('.content').appendChild(box);
@@ -56,7 +56,7 @@ const HOOKS = [
       if (free(p) < 0) box.remove(); else filled++;
     }
     return filled;
-  }, { HOOKS, CROWD });
+  }, { HOOKS, CROWDS });
   fs.writeFileSync(FILE, await page.content());
   await browser.close();
   console.log(`Chamadas inseridas: ${n}`);

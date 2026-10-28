@@ -56,3 +56,17 @@ e a skill de copywriting do repositório coreyhaines31/marketingskills (lida com
 ## Fotos e preços do autor (recebidos)
 - [x] Almoço Bs 27 e jantar com vinho Bs 120 por pessoa (La Cantonata, Cochabamba): 2 páginas novas em 2.5 com 4 fotos (sem rostos). O EXIF das fotos foi removido, inclusive a localização GPS.
 - Correção: o Word (.docx) saía quase vazio por um erro no conversor. Agora sai completo, com tabelas e fotos.
+
+# Regra nova do autor (28/10/2026): o que não tem fonte sai do curso
+- Removidos das Partes 1 e 2 todos os itens [PENDENTE]: tabela de vistos PT/EUA, tempos de voo PT/EUA, tributação de carro usado,
+  clínicas de La Paz, preços brasileiros de consulta/exames/seguro, academia/cinema no Brasil, “vida mais tranquila” e “medo de assalto”.
+- Ganharam fonte: voo direto São Paulo–Santa Cruz ~3h05 (FlightConnections, abr/2026) e altitude de La Paz 3.631 m (Guinness).
+- Ficam só os marcadores [PEDIR AO AUTOR] (dados que só o autor tem).
+
+# Parte 3 — Cripto do zero (27 páginas)
+## Pedir ao autor
+- [ ] A rede e o caminho que você usa no dia a dia (3.5).
+## Fontes a conferir antes de publicar
+- [ ] Taxas de saque por rede vêm de um comparativo de mai/2026 (eco.com). Conferir na página oficial de taxas da exchange escolhida.
+- [ ] Atestação BDO do 2º tri/2026 e tamanho do USDT (CoinMarketCap/DefiLlama): conferir em tether.to/transparency.
+- [ ] 90% dos fluxos em stablecoins: relatório da Chainalysis (jul/2024–jun/2025).
