@@ -1,0 +1,182 @@
+/* ==========================================================
+   LULA GANHOU. PRA ONDE IR? — sistema visual
+   Conceito: plantão urgente de TV + manchete de tabloide
+   + verde e amarelo das ruas (direita) + verde Tether (método)
+   ========================================================== */
+
+@font-face { font-family: "Anton"; src: url("node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+@font-face { font-family: "Archivo"; src: url("node_modules/@fontsource/archivo/files/archivo-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+@font-face { font-family: "Archivo"; src: url("node_modules/@fontsource/archivo/files/archivo-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "Archivo"; src: url("node_modules/@fontsource/archivo/files/archivo-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+@font-face { font-family: "JetBrains Mono"; src: url("node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+
+:root {
+  --red: #D7191C;      /* vermelho plantão: urgência, alerta, o “perigo vermelho” */
+  --yellow: #FFD60A;   /* amarelo alerta: marca-texto, fita */
+  --teth: #26A17B;     /* verde Tether: tudo do Método USDT */
+  --black: #000;
+  --gray: #EFEFEF;
+  --white: #fff;
+  --br-green: #009C3B; /* verde bandeira: as ruas, a direita */
+  --br-yellow: #FFDF00;/* amarelo bandeira */
+  --br-blue: #002776;  /* azul bandeira */
+  --ink: #111;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: 148mm 210mm; margin: 0; }
+html, body { background: #777; }
+body { font-family: "Archivo", sans-serif; font-size: 9.6pt; line-height: 1.38; color: var(--ink); }
+
+/* ---------- página ---------- */
+.page {
+  width: 148mm; height: 210mm; position: relative; overflow: hidden;
+  background: var(--white); margin: 0 auto 6mm; page-break-after: always; break-after: page;
+}
+@media print { html, body { background: none; } .page { margin: 0; } }
+
+.topbar {
+  position: absolute; top: 0; left: 0; right: 0; height: 11mm; background: var(--black); color: var(--white);
+  display: flex; align-items: center; justify-content: space-between; padding: 0 12mm;
+  font-family: "Anton"; font-size: 8.5pt; letter-spacing: .06em; text-transform: uppercase;
+}
+.topbar .live { background: var(--red); padding: 1mm 2.2mm; margin-right: 2.5mm; }
+.topbar .live::before { content: "● "; color: var(--yellow); }
+.topbar .sec { color: var(--yellow); }
+.page > .content { position: absolute; top: 11mm; left: 0; right: 0; bottom: 10mm; padding: 6mm 12mm 0; }
+.footer {
+  position: absolute; left: 12mm; right: 12mm; bottom: 0; height: 10mm; border-top: 0.6mm solid var(--black);
+  display: flex; align-items: center; justify-content: space-between; font-size: 7pt; font-weight: 600;
+}
+.footer .num { font-family: "Anton"; font-size: 11pt; background: var(--black); color: var(--white); padding: 0 2.5mm; }
+.footer .flagdot { display: inline-block; width: 7mm; height: 2mm; margin-right: 1.5mm; vertical-align: middle;
+  background: linear-gradient(90deg, var(--br-green) 0 50%, var(--br-yellow) 50% 100%); }
+
+/* ---------- tipografia ---------- */
+h1, h2, h3, .anton { font-family: "Anton"; font-weight: 400; text-transform: uppercase; line-height: 1.02; letter-spacing: .01em; }
+h1 { font-size: 26pt; margin-bottom: 3mm; }
+h2 { font-size: 16pt; margin: 0 0 2.5mm; }
+h3 { font-size: 11.5pt; margin: 3mm 0 1.5mm; }
+.kicker { display: inline-block; font-family: "Anton"; font-size: 8pt; text-transform: uppercase; letter-spacing: .08em;
+  background: var(--red); color: var(--white); padding: .6mm 2mm; margin-bottom: 2mm; }
+.kicker.green { background: var(--br-green); }
+.kicker.teth { background: var(--teth); }
+.kicker.black { background: var(--black); color: var(--yellow); }
+p { margin-bottom: 2.2mm; }
+strong { font-weight: 800; }
+mark, .hl { background: var(--yellow); padding: 0 .6mm; color: var(--black); }
+.big { font-family: "Anton"; font-size: 34pt; line-height: 1; }
+.red-t { color: var(--red); } .green-t { color: var(--br-green); } .teth-t { color: var(--teth); }
+small, .src { display: block; font-size: 6.4pt; color: #555; line-height: 1.3; margin-top: 2mm; }
+.src::before { content: "Fonte: "; font-weight: 800; }
+.lead { font-size: 11pt; font-weight: 600; }
+
+/* ---------- caixas ---------- */
+.box { background: var(--gray); padding: 3mm 3.5mm; margin: 2.5mm 0; border-left: 1.6mm solid var(--black); }
+.box.alert { background: var(--yellow); border-left-color: var(--black); }
+.box.red { background: var(--red); color: var(--white); border-left-color: var(--black); }
+.box.red mark { color: var(--black); }
+.box.teth { background: #E3F4EE; border-left-color: var(--teth); }
+.box.black { background: var(--black); color: var(--white); border-left-color: var(--yellow); }
+.box.br { background: var(--br-green); color: var(--white); border-left-color: var(--br-yellow); }
+.box.br strong { color: var(--br-yellow); }
+.box h3:first-child, .box h2:first-child { margin-top: 0; }
+.box p:last-child { margin-bottom: 0; }
+.doit { background: var(--teth); color: var(--white); padding: 3mm 3.5mm; margin-top: 3mm; }
+.doit::before { content: "FAÇA AGORA:"; display: block; font-family: "Anton"; font-size: 12pt; color: var(--yellow); }
+
+/* fita de alerta */
+.tape { height: 6mm; background: repeating-linear-gradient(-45deg, var(--yellow) 0 4mm, var(--black) 4mm 8mm); }
+.tape.br { background: repeating-linear-gradient(-45deg, var(--br-yellow) 0 4mm, var(--br-green) 4mm 8mm); }
+
+/* ---------- listas ---------- */
+ol.steps { list-style: none; counter-reset: s; margin: 2mm 0; }
+ol.steps li { counter-increment: s; position: relative; padding: 1.2mm 0 1.2mm 9mm; border-bottom: .3mm solid #ccc; }
+ol.steps li::before { content: counter(s); position: absolute; left: 0; top: 1mm; width: 6.5mm; height: 6.5mm; background: var(--teth);
+  color: var(--white); font-family: "Anton"; text-align: center; line-height: 6.5mm; font-size: 10pt; }
+ul.check { list-style: none; margin: 2mm 0; }
+ul.check li { padding: .8mm 0 .8mm 6.5mm; position: relative; }
+ul.check li::before { content: "✔"; position: absolute; left: 0; color: var(--br-green); font-weight: 800; }
+ul.x { list-style: none; margin: 2mm 0; }
+ul.x li { padding: .8mm 0 .8mm 6.5mm; position: relative; }
+ul.x li::before { content: "✖"; position: absolute; left: 0; color: var(--red); font-weight: 800; }
+
+/* ---------- tabelas ---------- */
+table { width: 100%; border-collapse: collapse; margin: 2mm 0; font-size: 8.3pt; }
+th { background: var(--black); color: var(--white); font-family: "Anton"; font-weight: 400; text-transform: uppercase; letter-spacing: .03em;
+  text-align: left; padding: 1.4mm 1.8mm; font-size: 8pt; }
+td { padding: 1.3mm 1.8mm; border-bottom: .3mm solid #bbb; vertical-align: top; }
+tr.hl td { background: var(--yellow); font-weight: 800; }
+tr.win td { background: #CFEFE3; font-weight: 800; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* ---------- layout ---------- */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin: 2.5mm 0; }
+.split > div { padding: 3mm; }
+.split .bad { background: #FDE3E3; border-top: 1.5mm solid var(--red); }
+.split .good { background: #E1F5E8; border-top: 1.5mm solid var(--br-green); }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5mm; margin: 2.5mm 0; }
+.stat { background: var(--black); color: var(--white); padding: 2.5mm; text-align: center; }
+.stat .v { font-family: "Anton"; font-size: 20pt; color: var(--yellow); line-height: 1; display: block; }
+.stat .l { font-size: 7pt; font-weight: 600; display: block; margin-top: 1mm; }
+.stat.red { background: var(--red); } .stat.red .v { color: var(--white); }
+.stat.green { background: var(--br-green); } .stat.green .v { color: var(--br-yellow); }
+.formula { font-family: "JetBrains Mono"; background: var(--black); color: var(--teth); padding: 2.5mm 3mm; font-size: 8.5pt; margin: 2mm 0; }
+.say { background: var(--white); border: .6mm solid var(--black); border-radius: 3mm; padding: 2mm 3mm; margin: 2mm 0; font-weight: 600; }
+figure { margin: 2.5mm 0; }
+figure svg { display: block; width: 100%; height: auto; }
+figcaption { font-size: 6.8pt; font-weight: 600; color: #444; margin-top: 1mm; }
+
+/* rota do dinheiro */
+.route { display: flex; align-items: stretch; gap: 1mm; margin: 3mm 0; }
+.route > div { flex: 1; background: var(--teth); color: var(--white); padding: 2mm 1mm; text-align: center; font-size: 7pt; font-weight: 800; position: relative; }
+.route > div .anton { display: block; font-size: 11pt; color: var(--yellow); }
+.route > div:first-child { background: var(--br-green); }
+.route > div:last-child { background: var(--black); }
+
+/* quiz */
+.quiz { counter-reset: q; }
+.quiz .q { counter-increment: q; padding: 1.5mm 0; border-bottom: .3mm dashed #999; }
+.quiz .q::before { content: counter(q) ". "; font-family: "Anton"; color: var(--red); }
+.quiz .opts { font-size: 8pt; color: #333; padding-left: 4mm; }
+
+/* manchete de jornal */
+.headline { border-top: 1.2mm solid var(--black); border-bottom: .4mm solid var(--black); padding: 2mm 0; margin: 2mm 0 3mm; }
+.headline .tag { font-family: "Anton"; color: var(--red); font-size: 9pt; }
+.headline .h { font-family: "Anton"; font-size: 19pt; line-height: 1; text-transform: uppercase; }
+
+/* ---------- páginas cheias ---------- */
+.full { padding: 0 !important; }
+.full > .content { top: 0; bottom: 0; padding: 0; }
+.opener { background: var(--black); color: var(--white); }
+.opener.red { background: var(--red); }
+.opener.teth { background: var(--teth); }
+.opener.br { background: var(--br-green); }
+.opener .inner { position: absolute; left: 12mm; right: 12mm; top: 30mm; }
+.opener .partno { font-family: "Anton"; font-size: 130pt; line-height: .85; color: var(--yellow); }
+.opener.br .partno { color: var(--br-yellow); }
+.opener .ptitle { font-family: "Anton"; font-size: 30pt; text-transform: uppercase; line-height: 1; margin-top: 3mm; }
+.opener .tape { position: absolute; left: 0; right: 0; }
+.opener .tape.t1 { top: 14mm; } .opener .tape.t2 { bottom: 14mm; }
+.opener .hook { font-size: 12pt; font-weight: 600; margin-top: 6mm; max-width: 110mm; }
+
+/* capa */
+.cover { background: var(--black); color: var(--white); }
+.cover .urgent { position: absolute; top: 12mm; left: 12mm; background: var(--red); font-family: "Anton"; font-size: 22pt; padding: 1mm 4mm; letter-spacing: .06em; }
+.cover .urgent::before { content: "● "; color: var(--yellow); }
+.cover .t { position: absolute; left: 12mm; right: 12mm; top: 34mm; font-family: "Anton"; text-transform: uppercase; line-height: .9; }
+.cover .t .a { font-size: 58pt; display: block; }
+.cover .t .b { font-size: 46pt; display: block; color: var(--yellow); }
+.cover .sub { position: absolute; left: 12mm; right: 12mm; top: 104mm; font-size: 9.5pt; font-weight: 600; }
+.cover .nums { position: absolute; left: 12mm; right: 12mm; bottom: 16mm; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2mm; }
+.cover .crowd { position: absolute; left: 0; right: 0; bottom: 38mm; }
+.cover .brand { position: absolute; left: 12mm; right: 12mm; bottom: 6mm; font-family: "Anton"; font-size: 8pt; letter-spacing: .1em; color: var(--yellow); display: flex; justify-content: space-between; }
+
+/* índice */
+.toc { list-style: none; }
+.toc li { display: flex; align-items: baseline; padding: .9mm 0; font-size: 8.6pt; }
+.toc li .d { flex: 1; border-bottom: .3mm dotted #888; margin: 0 1.5mm; transform: translateY(-1mm); }
+.toc li.part { font-family: "Anton"; text-transform: uppercase; font-size: 10.5pt; margin-top: 2mm; color: var(--br-green); }
+.toc li .pg { font-family: "Anton"; }
+
+.pending { background: #FFF3B0; border: .5mm dashed #B08900; padding: 1mm 2mm; font-size: 7.5pt; font-weight: 800; color: #6B5200; display: inline-block; }

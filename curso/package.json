@@ -1,0 +1,17 @@
+{
+  "name": "lula-ganhou-curso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "python3 build/gen_svg.py && python3 build/assemble.py && node build/check.js && node build/render.js && python3 build/todocx.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource/anton": "^5.3.0",
+    "@fontsource/archivo": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0"
+  }
+}
