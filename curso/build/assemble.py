@@ -49,6 +49,41 @@ def toc_pages(entries):
         res.append({"cls": "nofill", "attrs": {"sec": "Índice", "part": "Pré-textual"}, "inner": f'{title}<ul class="toc">{items}</ul>'})
     return res
 
+SRC_RE = re.compile(r'\s*<small class="src">(.*?)</small>', re.S)
+FONTES_CHARS = 2300  # caracteres de fonte por página do anexo
+
+def pull_sources(pages):
+    """Tira a linha de fonte das páginas e guarda para o anexo."""
+    for p in pages:
+        found = SRC_RE.findall(p["inner"])
+        p["inner"] = SRC_RE.sub("", p["inner"])
+        p["srcs"] = [re.sub(r'<span class="pending">.*?</span>', "", f).strip() for f in found]
+        p["srcs"] = [f for f in p["srcs"] if f]
+
+def fontes_pages(pages):
+    items, k = [p for p in pages if p.get("srcs")], 0
+    chunks, cur, size = [], [], 0
+    for p in items:
+        n = sum(len(re.sub("<.*?>", "", s)) for s in p["srcs"]) + 40
+        if cur and size + n > FONTES_CHARS:
+            chunks.append(cur); cur, size = [], 0
+        cur.append(p); size += n
+    if cur:
+        chunks.append(cur)
+    res = []
+    for i, ch in enumerate(chunks):
+        attrs = {"sec": "Fontes", "part": "Anexos"}
+        if i == 0:
+            attrs.update({"toc": "Anexo · Fontes de todos os números", "toc-level": "part"})
+        res.append({"cls": "nofill", "attrs": attrs, "inner": None, "chunk": ch, "first": i == 0})
+    return res
+
+def render_fontes(fp):
+    head = ('<span class="kicker black">Anexo</span><h2>Fontes de todos os números</h2>'
+            '<p style="font-size:8pt">Cada número do curso tem origem. Aqui estão, página por página.</p>') if fp["first"] else ""
+    lis = "".join(f'<li><b>p. {p["num"]}</b>{" ".join(p["srcs"])}</li>' for p in fp["chunk"])
+    return f'{head}<ul class="fontes">{lis}</ul>'
+
 def frame(p, num):
     a, full = p["attrs"], "full" in p["cls"].split()
     bar = "" if full else (f'<div class="topbar"><span><span class="live">Plantão</span>{html.escape(a.get("part", ""))}</span>'
@@ -61,15 +96,22 @@ def main():
     pages = load_pages()
     # o índice entra logo depois do marcador data-toc-here
     idx = next(i for i, p in enumerate(pages) if "toc-here" in p["attrs"])
+    pull_sources(pages)
     before, after = pages[:idx + 1], pages[idx + 1:]
+    after = after + fontes_pages(pages)
     # dois passes: primeiro descobrimos quantas páginas o índice ocupa
     n_toc = len(toc_pages(toc_entries(after, 0)))
     entries = toc_entries(after, len(before) + n_toc)
     allp = before + toc_pages(entries) + after
+    for i, p in enumerate(allp):
+        p["num"] = i + 1
+    for p in allp:
+        if p.get("chunk") is not None:
+            p["inner"] = render_fontes(p)
     body = "\n".join(frame(p, i + 1) for i, p in enumerate(allp))
     DIST.mkdir(exist_ok=True)
     (DIST / "curso.html").write_text(
-        '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>LULA GANHOU. PRA ONDE IR?</title>'
+        '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>LULA GANHOU. PRA ONDE IR? · E-book patriota, contra a censura da esquerda</title>'
         f'<link rel="stylesheet" href="../style.css"></head><body>{body}</body></html>', encoding="utf-8")
     print(f"{len(allp)} páginas montadas ({n_toc} de índice)")
 
