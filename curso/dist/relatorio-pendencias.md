@@ -133,3 +133,11 @@ e a skill de copywriting do repositório coreyhaines31/marketingskills (lida com
 - [ ] Resolução DNIT 47/2026 (Paraguai) vem de fonte secundária.
 - [ ] Renda mínima da residência Mercosul no Uruguai (fontes divergem) e prorrogação na Argentina (fontes divergem).
 - [ ] Taxa de integridade de US$ 250 dos EUA: confirmar se já está em vigor.
+
+# Bônus B1–B6, anexos e kit de vendas
+- B1 Espanhol de sobrevivência, B2 Roteiros de mensagem, B3 Planilhas, B4 Checklists mestres, B5 Glossário, B6 Grupo VIP; Aviso legal, Créditos e atualizações. Livro final: 241 páginas, overflow 0.
+- `dist/Pagina-de-Vendas.html` (responsiva, R$ 19,99, garantia de 7 dias) e `dist/Kit-de-Vendas.docx` (8 Reels, legenda, DM, 5 e-mails, plano do grupo, regras de anúncio político da Meta).
+## Falta do autor antes de publicar
+- [ ] Links: checkout, PDF, DOCX, grupo VIP.
+- [ ] Preço e formato do Dossiê avulso (order bump ou isca grátis); conferir os 19 links do Dossiê.
+- [ ] Confirmar direitos da foto real do ato antes de usá-la em qualquer peça.
