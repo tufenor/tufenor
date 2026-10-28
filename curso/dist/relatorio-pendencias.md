@@ -106,3 +106,10 @@ e a skill de copywriting do repositório coreyhaines31/marketingskills (lida com
 ## Pendente
 - [ ] Preço do dossiê avulso e onde ele entra no checkout (order bump ou produto separado).
 - [ ] [LINK DO CURSO] na contracapa e na página de WhatsApp.
+
+# Parte 6 — Tudo dentro da lei (17 páginas)
+- Linha vermelha (Lei 7.492/86, art. 22), IR de cripto (isenção de R$ 35 mil/mês, alíquotas, GCAP, MP 1.303 caducada), declaração (grupo 08), DeCripto e Lei 14.754, IOF, Saída Definitiva, CBE, lado boliviano e pasta fiscal.
+## Conferir antes de publicar
+- [ ] Código da stablecoin no IRPF (a maioria dos guias diz 03; um diz 10).
+- [ ] Regra de IR para venda de cripto em exchange/P2P no exterior (fontes divergem). Recomendado parecer de contador.
+- [ ] Data de vigência da DeCripto (IN RFB 2.291/2025).
