@@ -31,7 +31,9 @@ e a skill de copywriting do repositório coreyhaines31/marketingskills (lida com
 # Parte 2 — A matemática da Bolívia (36 páginas)
 
 ## Pedir ao autor
-- [ ] 3 anúncios reais de venda e 3 de aluguel (cidade, bairro, m²/quartos, preço) — 2.2 e 2.3.
+- [x] Aluguel real do autor recebido: 3 quartos no Queru Queru (Cochabamba), Bs 2.800 com condomínio, dividido por 3; + R$ 700/mês de comida, água, energia e internet. Entrou em 2.3, 2.5 (página “Eu vivo com R$ 1.106 por mês”), 2.7 e 2.9.
+- [ ] Foto do contrato ou recibo do aluguel com dados pessoais borrados (prova da página 2.5).
+- [ ] 3 anúncios reais de venda e mais 2 de aluguel (cidade, bairro, m²/quartos, preço) — 2.2 e 2.3.
 - [ ] Mais 5 pares de anúncios de carro Brasil × Bolívia (SUV, sedã, picape, moto, luxo) — 2.4.
 - [ ] Preço real de mercado do mês, contas, academia, restaurante e cinema na sua cidade — 2.5 e 2.8.
 - [ ] Orçamento real de família com 2 filhos — 2.5.
