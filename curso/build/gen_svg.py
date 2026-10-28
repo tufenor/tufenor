@@ -130,6 +130,39 @@ def salt_flat():
             f'<g transform="translate(300,48)">{person(0,22,0.55,K,True)}</g>'
             f'<text x="20" y="130" font-family="Anton" font-size="14" fill="{B}">SALAR DE UYUNI · ilustração</text></svg>')
 
+def esplanada():
+    """Fundo da capa: céu de alerta, Congresso Nacional e Esplanada com multidão verde-amarela (ilustração própria)."""
+    W_, H_ = 300, 425
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W_} {H_}" preserveAspectRatio="xMidYMid slice">',
+         '<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">'
+         '<stop offset="0" stop-color="#050505"/><stop offset=".45" stop-color="#2a0606"/>'
+         '<stop offset=".72" stop-color="#8a1410"/><stop offset=".86" stop-color="#e0631c"/></linearGradient>'
+         '<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity=".85"/>'
+         '<stop offset=".5" stop-color="#000" stop-opacity=".25"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient></defs>',
+         f'<rect width="{W_}" height="{H_}" fill="url(#sky)"/>']
+    # Congresso: espelho d'água, plataforma, cúpulas e torres gêmeas
+    o.append('<g fill="#0b0b0b">'
+             '<rect x="20" y="300" width="260" height="12"/>'
+             '<path d="M68,284 H140 A36,16 0 0 1 68,284 Z"/><rect x="100" y="298" width="8" height="4"/>'
+             '<path d="M178,300 a22,11 0 0 1 44,0 z"/>'
+             '<rect x="139" y="205" width="10" height="95"/><rect x="152" y="205" width="10" height="95"/>'
+             '<rect x="139" y="232" width="23" height="4"/></g>')
+    # bandeira no mastro
+    o.append('<line x1="250" y1="196" x2="250" y2="300" stroke="#111" stroke-width="2"/>' + flag(250, 196, 30, wave=3))
+    # Esplanada: blocos dos ministérios em perspectiva
+    for i in range(6):
+        x = 8 + i * 9
+        o.append(f'<rect x="{x}" y="{292 - i*2}" width="6" height="{18 + i*2}" fill="#141414"/>')
+        o.append(f'<rect x="{W_ - x - 6}" y="{292 - i*2}" width="6" height="{18 + i*2}" fill="#141414"/>')
+    o.append('</svg>')
+    svg = "".join(o)
+    # multidão: reaproveita o gerador, recortada para a base
+    c = crowd(w=600, h=200, seed=21, flags=14, signs=[("BRASIL ACIMA DE TUDO", 120), ("LIBERDADE!", 470)])
+    inner = c[c.index(">") + 1:c.rindex("</svg>")]
+    svg = svg.replace("</svg>", f'<g transform="translate(0,318) scale(0.5)">{inner}</g>'
+                      f'<rect width="{W_}" height="{H_}" fill="url(#fade)"/></svg>')
+    return svg
+
 files = {
     "crowd.svg": crowd(signs=[("BRASIL ACIMA DE TUDO", 140), ("LIBERDADE!", 460)]),
     "crowd-cover.svg": crowd(w=600, h=200, seed=3, flags=12, signs=[("MAIS 4 ANOS?", 470)], dark=True),
@@ -141,6 +174,7 @@ files = {
     "houses-vs.svg": houses_vs(),
     "cars-vs.svg": cars_vs(),
     "salt-flat.svg": salt_flat(),
+    "esplanada.svg": esplanada(),
 }
 for n, s in files.items():
     (OUT / n).write_text(s, encoding="utf-8")
