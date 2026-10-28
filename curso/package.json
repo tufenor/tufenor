@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "python3 build/gen_svg.py && python3 build/assemble.py && node build/check.js && node build/render.js && python3 build/todocx.py"
+    "build": "python3 build/gen_svg.py && python3 build/assemble.py && node build/fill.js && node build/check.js && node build/render.js && python3 build/todocx.py"
   },
   "keywords": [],
   "author": "",

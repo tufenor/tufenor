@@ -27,3 +27,26 @@ e a skill de copywriting do repositório coreyhaines31/marketingskills (lida com
 - Novos componentes de tabloide/TV: carimbos (URGENTE, ALERTA, CHOCANTE), citações-destaque, tarja "lower third" e letreiro "ÚLTIMAS" no rodapé.
 - O letreiro só usa fatos com fonte no corpo do curso.
 - Tipografia maior (corpo 10,6 pt; títulos 31/21 pt) e páginas sem o vazio de 30–40% no pé.
+
+# Parte 2 — A matemática da Bolívia (36 páginas)
+
+## Pedir ao autor
+- [ ] 3 anúncios reais de venda e 3 de aluguel (cidade, bairro, m²/quartos, preço) — 2.2 e 2.3.
+- [ ] Mais 5 pares de anúncios de carro Brasil × Bolívia (SUV, sedã, picape, moto, luxo) — 2.4.
+- [ ] Preço real de mercado do mês, contas, academia, restaurante e cinema na sua cidade — 2.5 e 2.8.
+- [ ] Orçamento real de família com 2 filhos — 2.5.
+- [ ] Clínicas de referência em Cochabamba; preço de consulta, exames e seguro saúde — 2.6.
+- [ ] Mensalidade real de 2 ou 3 escolas — 2.7.
+
+## Pendentes de fonte
+- [ ] Tributação de veículos usados na Bolívia (2.4).
+- [ ] Altitude de La Paz (fonte oficial) e dado de segurança pública Bolívia × Brasil (2.2, 2.8).
+- [ ] Preços brasileiros de consulta, exames, plano de saúde, jantar, academia e cinema (2.6, 2.8).
+- [ ] m² de Equipetrol e Calacoto vêm de poucos anúncios (Century 21). Trocar por relatório de mercado quando houver.
+- [ ] eju.tv (alta de anticréticos 29% / aluguéis 20%): confirmar a data da matéria.
+- [ ] Regras do anticrético (gravame ~0,5%, RC-IVA 10% a.a.) vêm de blog de assessoria tributária: confirmar no SIN.
+- [ ] Mensalidade de medicina no Brasil (~R$ 9.500) é média citada por blog (Gran Faculdade). Trocar pelo estudo Hoper/ABMES se possível.
+- [ ] www.riotimesonline.com também está bloqueado na rede da sessão; os dados da Rio Times vieram de resumos de busca.
+
+## Build
+- Novo passo `build/fill.js`: mede o espaço livre de cada página e injeta uma chamada de tabloide (gancho do escopo + multidão verde-amarela). Nenhum número novo entra por ele.

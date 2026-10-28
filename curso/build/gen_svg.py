@@ -83,6 +83,53 @@ def megaphone():
             f'<rect x="20" y="55" width="12" height="25" fill="{K}"/>'
             f'<path d="M98,25 q12,20 0,40 M106,15 q20,30 0,60" stroke="{K}" stroke-width="5" fill="none" stroke-linecap="round"/></svg>')
 
+def house(x, y, s, color, roof):
+    return (f'<polygon points="{x},{y+18*s} {x+20*s},{y} {x+40*s},{y+18*s}" fill="{roof}"/>'
+            f'<rect x="{x+4*s}" y="{y+18*s}" width="{32*s}" height="{24*s}" fill="{color}"/>'
+            f'<rect x="{x+16*s}" y="{y+28*s}" width="{8*s}" height="{14*s}" fill="{W}"/>'
+            f'<rect x="{x+7*s}" y="{y+22*s}" width="{6*s}" height="{6*s}" fill="{W}"/><rect x="{x+27*s}" y="{y+22*s}" width="{6*s}" height="{6*s}" fill="{W}"/>')
+
+def houses_vs():
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 150">']
+    out.append(f'<rect x="0" y="0" width="110" height="150" fill="#FDE3E3"/>')
+    out.append(f'<rect x="12" y="20" width="86" height="96" fill="{K}"/>')
+    for r in range(5):
+        for c in range(3):
+            out.append(f'<rect x="{22+c*24}" y="{28+r*17}" width="14" height="10" fill="{Y}"/>')
+    out.append(f'<text x="55" y="136" text-anchor="middle" font-family="Anton" font-size="14" fill="{R}">1 APÊ LEBLON</text>')
+    out.append(f'<text x="128" y="80" font-family="Anton" font-size="30" fill="{K}">=</text>')
+    for i in range(8):
+        out.append(house(155 + (i % 4) * 66, 14 + (i // 4) * 56, 1.25, G, Y))
+    out.append(f'<text x="285" y="142" text-anchor="middle" font-family="Anton" font-size="14" fill="{G}">QUASE 8,5 APÊS DE 3 QUARTOS EM COCHABAMBA</text>')
+    out.append('</svg>')
+    return "".join(out)
+
+def car(x, y, s, color):
+    return (f'<path d="M{x},{y+20*s} q0,-8 8,-9 l{14*s},-1 l{10*s},-10 h{30*s} l{14*s},10 l{14*s},2 q8,1 8,8 v6 h-{88*s} z" fill="{color}"/>'
+            f'<circle cx="{x+20*s}" cy="{y+26*s}" r="{7*s}" fill="{K}"/><circle cx="{x+68*s}" cy="{y+26*s}" r="{7*s}" fill="{K}"/>'
+            f'<path d="M{x+34*s},{y+9*s} l{8*s},-8 h{20*s} l{10*s},8 z" fill="#9fd3ff"/>')
+
+def cars_vs():
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120">']
+    out.append(car(10, 30, 1.6, R))
+    out.append(f'<text x="80" y="110" text-anchor="middle" font-family="Anton" font-size="14" fill="{R}">BRASIL: R$ 279.990</text>')
+    out.append(f'<text x="185" y="70" font-family="Anton" font-size="30">=</text>')
+    for i in range(4):
+        out.append(car(215 + (i % 2) * 100, 8 + (i // 2) * 44, 0.95, G))
+    out.append(f'<text x="315" y="114" text-anchor="middle" font-family="Anton" font-size="13" fill="{G}">4 MUSTANGS NA BOLÍVIA</text>')
+    out.append('</svg>')
+    return "".join(out)
+
+def salt_flat():
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 140">'
+            f'<rect width="420" height="70" fill="#7EC8F2"/><rect y="70" width="420" height="70" fill="#E9F5FB"/>'
+            f'<circle cx="340" cy="30" r="16" fill="{Y}"/>'
+            f'<polygon points="0,70 60,38 110,70" fill="#8a7f9c"/><polygon points="90,70 170,30 240,70" fill="#a597b5"/>'
+            f'<polygon points="0,70 60,102 110,70" fill="#8a7f9c" opacity=".35"/><polygon points="90,70 170,110 240,70" fill="#a597b5" opacity=".35"/>'
+            f'<g stroke="#c9dbe5" stroke-width="1.5" fill="none"><path d="M10,90 l40,20 l60,-10 l50,25"/><path d="M200,85 l50,25 l70,-12 l60,22"/></g>'
+            f'<g transform="translate(300,48)">{person(0,22,0.55,K,True)}</g>'
+            f'<text x="20" y="130" font-family="Anton" font-size="14" fill="{B}">SALAR DE UYUNI · ilustração</text></svg>')
+
 files = {
     "crowd.svg": crowd(signs=[("BRASIL ACIMA DE TUDO", 140), ("LIBERDADE!", 460)]),
     "crowd-cover.svg": crowd(w=600, h=200, seed=3, flags=12, signs=[("MAIS 4 ANOS?", 470)], dark=True),
@@ -91,6 +138,9 @@ files = {
     "no-communism.svg": no_communism(),
     "route-map.svg": route_map(),
     "megaphone.svg": megaphone(),
+    "houses-vs.svg": houses_vs(),
+    "cars-vs.svg": cars_vs(),
+    "salt-flat.svg": salt_flat(),
 }
 for n, s in files.items():
     (OUT / n).write_text(s, encoding="utf-8")
