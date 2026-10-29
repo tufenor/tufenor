@@ -7,9 +7,9 @@ O e-book está fechado e pode ser publicado. O que você não mandou saiu do tex
 
 # Obrigatório antes de vender
 1. **Link do grupo VIP do WhatsApp:** vira o QR code da página "Grupo VIP" (hoje é um quadro tracejado).
-2. **Link da página de vendas ou do checkout:** entra no Dossiê (página de WhatsApp e contracapa) e nos botões da página de vendas.
-3. **Preço do Dossiê avulso**, ou se vai ser grátis para captar contatos.
-4. **Abrir os 19 links do Dossiê** e avisar se algum não abrir.
+2. **Link da página de vendas ou do checkout:** entra no guia “Como convencer um petista” (página de WhatsApp e contracapa) e nos botões da página de vendas.
+3. **O guia “Como convencer um petista”** fica só como brinde de quem compra, ou também como isca grátis?
+4. **Abrir os 19 links do dossiê** (dentro do guia) e avisar se algum não abrir.
 
 # Opcional (deixa o livro mais forte; cada item volta para o capítulo indicado)
 - Há quanto tempo mora na Bolívia; o que surpreendeu, o que foi difícil, o que faria diferente (7.13).

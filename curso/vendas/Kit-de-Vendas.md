@@ -7,7 +7,7 @@ author: "Patriota Anônimo"
 
 Produto: e-book **LULA GANHOU. PRA ONDE IR?** · R$ 19,99 · PDF + Word · grupo VIP · atualizações por 12 meses · garantia de 7 dias (CDC, art. 49).
 
-Bônus avulso (order bump ou isca): **Dossiê: mais 4 anos em manchetes** (13 páginas).
+Brinde para quem compra: **Como convencer um petista** (49 páginas: método de conversa, 12 objeções com resposta e dado, roteiros de WhatsApp e o dossiê de 19 manchetes com QR code). Também pode virar isca grátis para captar contatos.
 
 ## Regras que valem para todas as peças
 
@@ -123,4 +123,4 @@ Responda este e-mail contando o seu resultado. Com a sua autorização, ele pode
 ## Pendências do kit
 
 - [LINK DO CHECKOUT], [LINK DO PDF], [LINK DO DOCX], [LINK DO GRUPO].
-- Preço e formato do Dossiê avulso (order bump ou isca grátis).
+- Definir se o guia “Como convencer um petista” fica só como brinde ou também como isca grátis.

@@ -149,3 +149,13 @@ e a skill de copywriting do repositório coreyhaines31/marketingskills (lida com
 # Fechamento (29/10/2026)
 - Todos os [PEDIR AO AUTOR] sem resposta saíram do texto. 2.4 virou tabela para o leitor preencher; 2.5 usa os R$ 700 do autor; a página de resultado 4.18 saiu (fica "Se for ganhar com câmbio, faça certo"). Livro: 241 páginas, overflow 0.
 - Únicos marcadores restantes: [LINK DO GRUPO] (QR do Grupo VIP) e [LINK DO CURSO] (Dossiê).
+
+# Rodada 29/10/2026 (tarde)
+- 2.3: 2 anúncios de aluguel do autor (garzonier Bs 1.400; 3 quartos Zona Norte Bs 3.300). Fotos dos anúncios não entraram (são do anunciante).
+- 4.3: página “Preciso abrir empresa para fazer o câmbio?” (para si mesmo não; para terceiros, PJ + autorização do BC). 4.5: exemplo Binance (Pix → USDT → P2P em Bs).
+- 7.3: “O visto Mercosul em 7 passos”.
+- Dossiê avulso virou o brinde “Como convencer um petista” (49 páginas): ciência da persuasão, regras, perfis, método em 5 passos, 12 objeções com dado, roteiros, plano de 30 dias e as 19 manchetes.
+## Conferir antes de publicar
+- [ ] Desemprego 5,3%, endividamento 49,9% e Serasa 83,98 mi vieram de resumo (Mix Vale); conferir em IBGE, BC e Serasa.
+- [ ] Placar 8 x 3 do STF (15/04/2021): conferir em notícia de agência.
+- [ ] Lista atual de documentos da DIGEMIG em Cochabamba e taxa (450 UFV).
