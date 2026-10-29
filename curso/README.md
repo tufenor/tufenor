@@ -11,4 +11,4 @@ Build: `npm install && npm run build` (curso) · `npm run build:dossie` (dossiê
 - `build/check.js`: falha se algum conteúdo chegar a menos de 4 mm do rodapé.
 - `build/render.js`: PDF A5. `build/todocx.py`: Word via pandoc.
 
-Status: e-book completo (241 páginas): pré-textual, Partes 1 a 8, Bônus B1 a B7, anexos e fontes. Dossiê avulso (13 páginas). Kit de vendas em `vendas/` (página de vendas + roteiros, DM e e-mails). `npm run build:all` gera tudo em `dist/`.
+Status: e-book fechado (241 páginas), Dossiê avulso (13 páginas) e kit de vendas. Faltam só os links (grupo VIP e checkout) — ver `vendas/Pendencias-do-Autor.md`.

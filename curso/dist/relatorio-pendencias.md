@@ -145,3 +145,7 @@ e a skill de copywriting do repositório coreyhaines31/marketingskills (lida com
 # História do autor (recebida em 29/10/2026)
 - [x] Por que saiu: fechou a empresa pela dificuldade deixada pelo governo de esquerda; pesquisou onde o dinheiro renderia mais; veio para a Bolívia; hoje estuda medicina e vive bem. Entrou na Carta (p. 3) e no depoimento 7.13 (p. 194).
 - [ ] Opcional: há quanto tempo mora na Bolívia; o que surpreendeu, o que foi difícil, o que faria diferente.
+
+# Fechamento (29/10/2026)
+- Todos os [PEDIR AO AUTOR] sem resposta saíram do texto. 2.4 virou tabela para o leitor preencher; 2.5 usa os R$ 700 do autor; a página de resultado 4.18 saiu (fica "Se for ganhar com câmbio, faça certo"). Livro: 241 páginas, overflow 0.
+- Únicos marcadores restantes: [LINK DO GRUPO] (QR do Grupo VIP) e [LINK DO CURSO] (Dossiê).

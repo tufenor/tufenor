@@ -3,47 +3,24 @@ title: "O que falta do autor · LULA GANHOU. PRA ONDE IR?"
 author: "Patriota Anônimo"
 ---
 
-Responda no seu ritmo. O que você não quiser ou não puder mandar, eu tiro do e-book, sem deixar buraco.
+O e-book está fechado e pode ser publicado. O que você não mandou saiu do texto, sem deixar buraco.
 
-# 1. Sua história (Carta ao leitor e cap. 7.13)
-1. ~~Por que você saiu do Brasil?~~ Recebido (29/10/2026) e já no e-book.
-2. Há quanto tempo mora na Bolívia? (opcional)
-3. Para completar o depoimento (opcional): o que mais te surpreendeu, o que foi difícil e o que você faria diferente.
+# Obrigatório antes de vender
+1. **Link do grupo VIP do WhatsApp:** vira o QR code da página "Grupo VIP" (hoje é um quadro tracejado).
+2. **Link da página de vendas ou do checkout:** entra no Dossiê (página de WhatsApp e contracapa) e nos botões da página de vendas.
+3. **Preço do Dossiê avulso**, ou se vai ser grátis para captar contatos.
+4. **Abrir os 19 links do Dossiê** e avisar se algum não abrir.
 
-# 2. Moradia e custo de vida em Cochabamba (Parte 2)
-4. Foto do contrato ou do recibo do aluguel, com nome, documento e endereço borrados.
-5. 3 anúncios reais de imóvel à venda: cidade, bairro, m² e preço.
-6. Mais 2 anúncios de aluguel: bairro, quartos e preço em Bs.
-7. Quanto você gasta por mês com mercado.
-8. Quanto você paga de contas (luz, água, internet).
-9. Preço de academia e de cinema.
-10. Se souber: orçamento de uma família com 2 filhos na sua cidade.
-
-# 3. Carros (cap. 2.4)
-11. 5 pares de anúncios do mesmo modelo e ano no Brasil e na Bolívia: 1 SUV, 1 sedã, 1 picape, 1 moto e 1 carro de luxo. Basta o print ou o link de cada um.
-
-# 4. Saúde e escola (caps. 2.6 e 2.7)
-12. Clínicas de referência em Cochabamba.
-13. Quanto você pagou de consulta, exames e seguro saúde.
-14. Mensalidade de 2 ou 3 escolas (nome da escola e valor).
-
-# 5. O método na prática (Partes 3 e 4)
-15. Qual rede você usa para mandar USDT (ex.: TRON, Polygon) e o caminho do dia a dia.
-16. Qual exchange você usa no Brasil, qual exchange ou P2P na Bolívia e qual banco.
-17. Seu resultado com câmbio (cap. 4.18): período, capital usado, margem média por operação, horas por semana, melhor e pior mês.
-18. Extratos desse período, com dados pessoais, números de conta e nomes de terceiros borrados.
-
-# 6. Documentos e comunidade (Parte 7)
-19. Como foi a sua residência em Cochabamba: quanto tempo levou, quanto pagou e quais documentos pediram.
-20. Em qual banco você abriu conta e o que pediram.
-21. Grupos e igrejas de brasileiros que você conhece em Cochabamba.
-
-# 7. Links e decisões de venda
-22. Link do checkout (Hotmart, Kiwify, Eduzz…).
-23. Link do grupo VIP do WhatsApp (vira QR code no e-book).
-24. Links de entrega do PDF e do Word (ou deixo para a plataforma entregar).
-25. Dossiê avulso: preço, ou se vai ser grátis para captar contatos.
-26. Você tem direito de uso da foto real do ato? Se sim, mande o arquivo original.
-
-# 8. Conferir antes de publicar (não precisa me mandar nada)
-- Abrir os 19 links do Dossiê e avisar se algum não abrir. A rede desta sessão bloqueia esses sites.
+# Opcional (deixa o livro mais forte; cada item volta para o capítulo indicado)
+- Há quanto tempo mora na Bolívia; o que surpreendeu, o que foi difícil, o que faria diferente (7.13).
+- Foto do contrato ou recibo do aluguel, com dados borrados (2.5).
+- Anúncios reais de imóveis à venda e de aluguel (2.2 e 2.3).
+- 5 pares de anúncios de carro Brasil × Bolívia (2.4; hoje é uma tabela para o leitor preencher).
+- Gastos com academia e cinema; orçamento de família com 2 filhos (2.5 e 2.8).
+- Clínicas em Cochabamba; preço de consulta, exames e seguro (2.6).
+- Mensalidade de 2 ou 3 escolas (2.7).
+- Rede que você usa para o USDT; exchange no Brasil, P2P na Bolívia e banco (3.5 e 4.5).
+- Seu resultado com câmbio, com extratos borrados (volta a página "Como eu ganho com câmbio", 4.18).
+- Como foi a sua residência e a abertura de conta (7.4 e 7.7).
+- Grupos e igrejas de brasileiros em Cochabamba (7.12).
+- Direito de uso da foto real do ato, se quiser usá-la em alguma peça.
