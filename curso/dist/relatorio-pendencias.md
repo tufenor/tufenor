@@ -141,3 +141,7 @@ e a skill de copywriting do repositório coreyhaines31/marketingskills (lida com
 - [ ] Links: checkout, PDF, DOCX, grupo VIP.
 - [ ] Preço e formato do Dossiê avulso (order bump ou isca grátis); conferir os 19 links do Dossiê.
 - [ ] Confirmar direitos da foto real do ato antes de usá-la em qualquer peça.
+
+# História do autor (recebida em 29/10/2026)
+- [x] Por que saiu: fechou a empresa pela dificuldade deixada pelo governo de esquerda; pesquisou onde o dinheiro renderia mais; veio para a Bolívia; hoje estuda medicina e vive bem. Entrou na Carta (p. 3) e no depoimento 7.13 (p. 194).
+- [ ] Opcional: há quanto tempo mora na Bolívia; o que surpreendeu, o que foi difícil, o que faria diferente.

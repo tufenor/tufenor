@@ -6,9 +6,9 @@ author: "Patriota Anônimo"
 Responda no seu ritmo. O que você não quiser ou não puder mandar, eu tiro do e-book, sem deixar buraco.
 
 # 1. Sua história (Carta ao leitor e cap. 7.13)
-1. Por que você saiu do Brasil?
-2. Há quanto tempo mora na Bolívia?
-3. Depoimento de 1 página: o que mais te surpreendeu, o que foi difícil e o que você faria diferente.
+1. ~~Por que você saiu do Brasil?~~ Recebido (29/10/2026) e já no e-book.
+2. Há quanto tempo mora na Bolívia? (opcional)
+3. Para completar o depoimento (opcional): o que mais te surpreendeu, o que foi difícil e o que você faria diferente.
 
 # 2. Moradia e custo de vida em Cochabamba (Parte 2)
 4. Foto do contrato ou do recibo do aluguel, com nome, documento e endereço borrados.
