@@ -7,7 +7,7 @@ author: "Patriota Anônimo"
 
 Produto: e-book **LULA GANHOU. PRA ONDE IR?** · R$ 19,99 · PDF + Word · grupo VIP · atualizações por 12 meses · garantia de 7 dias (CDC, art. 49).
 
-Brinde para quem compra: **Como convencer um petista** (49 páginas: método de conversa, 12 objeções com resposta e dado, roteiros de WhatsApp e o dossiê de 19 manchetes com QR code). Também pode virar isca grátis para captar contatos.
+Brinde para quem compra: **Como convencer um petista** (57 páginas: método de conversa, 12 objeções com resposta e dado, roteiros de WhatsApp e o dossiê de 19 manchetes com QR code). Também pode virar isca grátis para captar contatos.
 
 ## Regras que valem para todas as peças
 
