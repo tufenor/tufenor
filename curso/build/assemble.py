@@ -60,7 +60,7 @@ def toc_pages(entries):
             f'<li class="{lvl}"><span>{html.escape(t)}</span><span class="d"></span><span class="pg">{pg}</span></li>'
             for lvl, t, pg in entries[k * TOC_PER_PAGE:(k + 1) * TOC_PER_PAGE])
         title = '<span class="kicker black">Índice</span><h1>O que tem aqui dentro</h1>' if k == 0 else ""
-        res.append({"cls": "nofill", "attrs": {"sec": "Índice", "part": "Pré-textual"}, "inner": f'{title}<ul class="toc">{items}</ul>'})
+        res.append({"cls": "nofill", "attrs": {"sec": "Índice", "part": "Índice"}, "inner": f'{title}<ul class="toc">{items}</ul>'})
     return res
 
 SRC_RE = re.compile(r'\s*<small class="src">(.*?)</small>', re.S)

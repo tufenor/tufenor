@@ -193,15 +193,15 @@ figcaption { font-size: 6.8pt; font-weight: 600; color: #444; margin-top: 1mm; }
 .pull.green::before { color: var(--br-green); }
 .lower { display: flex; margin: 3mm 0; }
 .lower .lbl { background: var(--red); color: var(--white); font-family: "Anton"; font-size: 11pt; padding: 2mm 3mm; display: flex; align-items: center; }
-.lower .txt { background: var(--black); color: var(--white); font-family: "Anton"; text-transform: uppercase; font-size: 13pt; padding: 2mm 3mm; flex: 1; line-height: 1.05; }
-.lower .txt mark { color: var(--black); }
+.lower .txt { background: var(--black); color: var(--white); font-family: "Anton"; text-transform: uppercase; font-size: 13pt; padding: 2.4mm 3mm; flex: 1; line-height: 1.3; }
+.lower .txt mark { color: var(--black); padding: 0 .8mm; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .footer .tick { flex: 1; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-right: 3mm; font-size: 7.4pt; }
 .footer .tick b { background: var(--red); color: var(--white); font-family: "Anton"; font-weight: 400; padding: .4mm 1.6mm; margin-right: 1.5mm; letter-spacing: .05em; }
 .sub-h { font-size: 11pt; font-weight: 600; color: #333; margin: -1mm 0 3mm; }
 .filler { margin-top: 3mm; }
 .filler .lower { margin: 0; }
-.crowdband { height: 30mm; overflow: hidden; margin-bottom: 0; }
-.crowdband svg { width: 100%; height: 30mm; display: block; }
+.crowdband { margin-bottom: 0; }
+.crowdband svg { width: 100%; height: auto; display: block; }
 /* fotos do autor */
 .photos { display: grid; gap: 2mm; margin: 2.5mm 0; }
 .photos.c2 { grid-template-columns: 1fr 1fr; }
@@ -232,9 +232,10 @@ figcaption { font-size: 6.8pt; font-weight: 600; color: #444; margin-top: 1mm; }
 .cover .selo .s1 { font-family: "Anton"; font-size: 15pt; line-height: .95; color: var(--br-green); }
 .cover .selo .s2 { font-size: 5.6pt; font-weight: 800; line-height: 1.15; margin-top: 1mm; }
 .cover .sub { text-shadow: 0 0 2mm #000; }
-.cover .selo { top: 6mm; right: 8mm; width: 27mm; height: 27mm; padding: 2mm; }
-.cover .selo .s1 { font-size: 13pt; }
-.cover .selo .s2 { font-size: 4.9pt; }
+.cover .selo { top: 6mm; right: 7mm; width: 31mm; height: 31mm; padding: 4.5mm; transform: rotate(8deg); }
+.cover .selo .s1 { font-size: 13.5pt; line-height: 1.08; }
+.cover .selo .s2 { font-size: 5.3pt; line-height: 1.25; margin-top: 1.2mm; }
+.cover .sub { background: rgba(0,0,0,.55); padding: 2.5mm 3mm; text-shadow: none; }
 .cover .brand { left: 0; right: 0; bottom: 0; padding: 2.2mm 12mm; background: var(--black); }
 .box.br ul.check li::before { color: var(--br-yellow); }
 /* dossiê (Bônus B7) */
@@ -252,7 +253,7 @@ figcaption { font-size: 6.8pt; font-weight: 600; color: #444; margin-top: 1mm; }
 .extra { background: var(--red); color: var(--white); }
 .extra .ex-tag { position: absolute; top: 18mm; left: 12mm; background: var(--yellow); color: var(--black); font-family: "Anton"; font-size: 30pt; padding: 1mm 5mm; transform: rotate(-3deg); }
 .extra .ex-h { position: absolute; left: 12mm; right: 12mm; top: 48mm; font-family: "Anton"; font-size: 54pt; line-height: 1.05; text-transform: uppercase; }
-.extra .ex-h mark { background: var(--black); color: var(--yellow); padding: 0 2mm; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.extra .ex-h mark { background: none; color: var(--yellow); padding: 0; text-shadow: .8mm .8mm 0 var(--black); }
 .extra .ex-sub { position: absolute; left: 12mm; right: 12mm; bottom: 62mm; font-size: 13pt; font-weight: 700; }
 .extra .ex-st { position: absolute; right: 10mm; bottom: 26mm; border: 1.2mm solid var(--white); color: var(--white); font-family: "Anton"; font-size: 22pt; padding: 1mm 4mm; transform: rotate(-8deg); }
 
@@ -263,3 +264,5 @@ figcaption { font-size: 6.8pt; font-weight: 600; color: #444; margin-top: 1mm; }
 .frase.g { background: var(--br-green); border-left-color: var(--br-yellow); }
 .frase small { display: block; font-family: "Archivo"; font-weight: 800; font-size: 7pt; text-transform: none; color: var(--br-yellow); margin-top: 2mm; }
 .frase.v small { color: var(--yellow); }
+
+td.n, th.n { white-space: nowrap; }
