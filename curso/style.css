@@ -1,0 +1,268 @@
+/* ==========================================================
+   LULA GANHOU. PRA ONDE IR? — sistema visual
+   Conceito: plantão urgente de TV + manchete de tabloide
+   + verde e amarelo das ruas (direita) + verde Tether (método)
+   ========================================================== */
+
+@font-face { font-family: "Anton"; src: url("node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+@font-face { font-family: "Archivo"; src: url("node_modules/@fontsource/archivo/files/archivo-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+@font-face { font-family: "Archivo"; src: url("node_modules/@fontsource/archivo/files/archivo-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "Archivo"; src: url("node_modules/@fontsource/archivo/files/archivo-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+@font-face { font-family: "JetBrains Mono"; src: url("node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+
+:root {
+  --red: #D7191C;      /* vermelho plantão: urgência, alerta, o “perigo vermelho” */
+  --yellow: #FFD60A;   /* amarelo alerta: marca-texto, fita */
+  --teth: #26A17B;     /* verde Tether: tudo do Método USDT */
+  --black: #000;
+  --gray: #EFEFEF;
+  --white: #fff;
+  --br-green: #009C3B; /* verde bandeira: as ruas, a direita */
+  --br-yellow: #FFDF00;/* amarelo bandeira */
+  --br-blue: #002776;  /* azul bandeira */
+  --ink: #111;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: 148mm 210mm; margin: 0; }
+html, body { background: #777; }
+body { font-family: "Archivo", sans-serif; font-size: 10.6pt; line-height: 1.4; color: var(--ink); }
+
+/* ---------- página ---------- */
+.page {
+  width: 148mm; height: 210mm; position: relative; overflow: hidden;
+  background: var(--white); margin: 0 auto 6mm; page-break-after: always; break-after: page;
+}
+@media print { html, body { background: none; } .page { margin: 0; } }
+
+.topbar {
+  position: absolute; top: 0; left: 0; right: 0; height: 11mm; background: var(--black); color: var(--white);
+  display: flex; align-items: center; justify-content: space-between; padding: 0 12mm;
+  font-family: "Anton"; font-size: 8.5pt; letter-spacing: .06em; text-transform: uppercase;
+}
+.topbar .live { background: var(--red); padding: 1mm 2.2mm; margin-right: 2.5mm; }
+.topbar .live::before { content: "● "; color: var(--yellow); }
+.topbar .sec { color: var(--yellow); }
+.page > .content { position: absolute; top: 11mm; left: 0; right: 0; bottom: 10mm; padding: 6mm 12mm 0; }
+.footer {
+  position: absolute; left: 12mm; right: 12mm; bottom: 0; height: 10mm; border-top: 0.6mm solid var(--black);
+  display: flex; align-items: center; justify-content: space-between; font-size: 7pt; font-weight: 600;
+}
+.footer .num { font-family: "Anton"; font-size: 11pt; background: var(--black); color: var(--white); padding: 0 2.5mm; }
+.footer .flagdot { display: inline-block; width: 7mm; height: 2mm; margin-right: 1.5mm; vertical-align: middle;
+  background: linear-gradient(90deg, var(--br-green) 0 50%, var(--br-yellow) 50% 100%); }
+
+/* ---------- tipografia ---------- */
+h1, h2, h3, .anton { font-family: "Anton"; font-weight: 400; text-transform: uppercase; line-height: 1.02; letter-spacing: .01em; }
+h1 { font-size: 31pt; margin-bottom: 3mm; }
+h2 { font-size: 21pt; margin: 0 0 2.5mm; }
+h3 { font-size: 13.5pt; margin: 3mm 0 1.5mm; }
+.kicker { display: inline-block; font-family: "Anton"; font-size: 8pt; text-transform: uppercase; letter-spacing: .08em;
+  background: var(--red); color: var(--white); padding: .6mm 2mm; margin-bottom: 2mm; }
+.kicker.green { background: var(--br-green); }
+.kicker.teth { background: var(--teth); }
+.kicker.black { background: var(--black); color: var(--yellow); }
+p { margin-bottom: 2.2mm; }
+strong { font-weight: 800; }
+mark, .hl { background: var(--yellow); padding: 0 .6mm; color: var(--black); }
+.big { font-family: "Anton"; font-size: 34pt; line-height: 1; }
+.red-t { color: var(--red); } .green-t { color: var(--br-green); } .teth-t { color: var(--teth); }
+small, .src { display: block; font-size: 6.8pt; color: #555; line-height: 1.3; margin-top: 2mm; }
+.src::before { content: "Fonte: "; font-weight: 800; }
+.lead { font-size: 12.5pt; font-weight: 800; }
+
+/* ---------- caixas ---------- */
+.box { background: var(--gray); padding: 3mm 3.5mm; margin: 2.5mm 0; border-left: 1.6mm solid var(--black); }
+.box.alert { background: var(--yellow); border-left-color: var(--black); }
+.box.red { background: var(--red); color: var(--white); border-left-color: var(--black); }
+.box.red mark { color: var(--black); }
+.box.teth { background: #E3F4EE; border-left-color: var(--teth); }
+.box.black { background: var(--black); color: var(--white); border-left-color: var(--yellow); }
+.box.br { background: var(--br-green); color: var(--white); border-left-color: var(--br-yellow); }
+.box.br strong { color: var(--br-yellow); }
+.box h3:first-child, .box h2:first-child { margin-top: 0; }
+.box p:last-child { margin-bottom: 0; }
+.doit { background: var(--teth); color: var(--white); padding: 3mm 3.5mm; margin-top: 3mm; }
+.doit::before { content: "FAÇA AGORA:"; display: block; font-family: "Anton"; font-size: 12pt; color: var(--yellow); }
+
+/* fita de alerta */
+.tape { height: 6mm; background: repeating-linear-gradient(-45deg, var(--yellow) 0 4mm, var(--black) 4mm 8mm); }
+.tape.br { background: repeating-linear-gradient(-45deg, var(--br-yellow) 0 4mm, var(--br-green) 4mm 8mm); }
+
+/* ---------- listas ---------- */
+ol.steps { list-style: none; counter-reset: s; margin: 2mm 0; }
+ol.steps li { counter-increment: s; position: relative; padding: 1.2mm 0 1.2mm 9mm; border-bottom: .3mm solid #ccc; }
+ol.steps li::before { content: counter(s); position: absolute; left: 0; top: 1mm; width: 6.5mm; height: 6.5mm; background: var(--teth);
+  color: var(--white); font-family: "Anton"; text-align: center; line-height: 6.5mm; font-size: 10pt; }
+ul.check { list-style: none; margin: 2mm 0; }
+ul.check li { padding: .8mm 0 .8mm 6.5mm; position: relative; }
+ul.check li::before { content: "✔"; position: absolute; left: 0; color: var(--br-green); font-weight: 800; }
+ul.x { list-style: none; margin: 2mm 0; }
+ul.x li { padding: .8mm 0 .8mm 6.5mm; position: relative; }
+ul.x li::before { content: "✖"; position: absolute; left: 0; color: var(--red); font-weight: 800; }
+
+/* ---------- tabelas ---------- */
+table { width: 100%; border-collapse: collapse; margin: 2mm 0; font-size: 9.4pt; }
+th { background: var(--black); color: var(--white); font-family: "Anton"; font-weight: 400; text-transform: uppercase; letter-spacing: .03em;
+  text-align: left; padding: 1.4mm 1.8mm; font-size: 8pt; }
+td { padding: 1.3mm 1.8mm; border-bottom: .3mm solid #bbb; vertical-align: top; }
+tr.hl td { background: var(--yellow); font-weight: 800; }
+tr.win td { background: #CFEFE3; font-weight: 800; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* ---------- layout ---------- */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin: 2.5mm 0; }
+.split > div { padding: 3mm; }
+.split .bad { background: #FDE3E3; border-top: 1.5mm solid var(--red); }
+.split .good { background: #E1F5E8; border-top: 1.5mm solid var(--br-green); }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5mm; margin: 2.5mm 0; }
+.stat { background: var(--black); color: var(--white); padding: 2.5mm; text-align: center; }
+.stat .v { font-family: "Anton"; font-size: 25pt; color: var(--yellow); line-height: 1; display: block; }
+.stat .l { font-size: 8pt; font-weight: 600; display: block; margin-top: 1mm; }
+.stat.red { background: var(--red); } .stat.red .v { color: var(--white); }
+.stat.green { background: var(--br-green); } .stat.green .v { color: var(--br-yellow); }
+.formula { font-family: "JetBrains Mono"; background: var(--black); color: var(--teth); padding: 2.5mm 3mm; font-size: 8.5pt; margin: 2mm 0; }
+.say { background: var(--white); border: .6mm solid var(--black); border-radius: 3mm; padding: 2mm 3mm; margin: 2mm 0; font-weight: 600; }
+figure { margin: 2.5mm 0; }
+figure svg { display: block; width: 100%; height: auto; }
+figcaption { font-size: 6.8pt; font-weight: 600; color: #444; margin-top: 1mm; }
+
+/* rota do dinheiro */
+.route { display: flex; align-items: stretch; gap: 1mm; margin: 3mm 0; }
+.route > div { flex: 1; background: var(--teth); color: var(--white); padding: 2mm 1mm; text-align: center; font-size: 7pt; font-weight: 800; position: relative; }
+.route > div .anton { display: block; font-size: 11pt; color: var(--yellow); }
+.route > div:first-child { background: var(--br-green); }
+.route > div:last-child { background: var(--black); }
+
+/* quiz */
+.quiz { counter-reset: q; }
+.quiz .q { counter-increment: q; padding: 1.5mm 0; border-bottom: .3mm dashed #999; }
+.quiz .q::before { content: counter(q) ". "; font-family: "Anton"; color: var(--red); }
+.quiz .opts { font-size: 8pt; color: #333; padding-left: 4mm; }
+
+/* manchete de jornal */
+.headline { border-top: 1.2mm solid var(--black); border-bottom: .4mm solid var(--black); padding: 2mm 0; margin: 2mm 0 3mm; }
+.headline .tag { font-family: "Anton"; color: var(--red); font-size: 9pt; }
+.headline .h { font-family: "Anton"; font-size: 19pt; line-height: 1; text-transform: uppercase; }
+
+/* ---------- páginas cheias ---------- */
+.full { padding: 0 !important; }
+.full > .content { top: 0; bottom: 0; padding: 0; }
+.opener { background: var(--black); color: var(--white); }
+.opener.red { background: var(--red); }
+.opener.teth { background: var(--teth); }
+.opener.br { background: var(--br-green); }
+.opener .inner { position: absolute; left: 12mm; right: 12mm; top: 30mm; }
+.opener .partno { font-family: "Anton"; font-size: 130pt; line-height: .85; color: var(--yellow); }
+.opener.br .partno { color: var(--br-yellow); }
+.opener .ptitle { font-family: "Anton"; font-size: 30pt; text-transform: uppercase; line-height: 1; margin-top: 3mm; }
+.opener .tape { position: absolute; left: 0; right: 0; }
+.opener .tape.t1 { top: 14mm; } .opener .tape.t2 { bottom: 14mm; }
+.opener .hook { font-size: 12pt; font-weight: 600; margin-top: 6mm; max-width: 110mm; }
+
+/* capa */
+.cover { background: var(--black); color: var(--white); }
+.cover .urgent { position: absolute; top: 12mm; left: 12mm; background: var(--red); font-family: "Anton"; font-size: 22pt; padding: 1mm 4mm; letter-spacing: .06em; }
+.cover .urgent::before { content: "● "; color: var(--yellow); }
+.cover .t { position: absolute; left: 12mm; right: 12mm; top: 34mm; font-family: "Anton"; text-transform: uppercase; line-height: .9; }
+.cover .t .a { font-size: 58pt; display: block; }
+.cover .t .b { font-size: 46pt; display: block; color: var(--yellow); }
+.cover .sub { position: absolute; left: 12mm; right: 12mm; top: 104mm; font-size: 9.5pt; font-weight: 600; }
+.cover .nums { position: absolute; left: 12mm; right: 12mm; bottom: 16mm; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2mm; }
+.cover .crowd { position: absolute; left: 0; right: 0; bottom: 38mm; }
+.cover .brand { position: absolute; left: 12mm; right: 12mm; bottom: 6mm; font-family: "Anton"; font-size: 8pt; letter-spacing: .1em; color: var(--yellow); display: flex; justify-content: space-between; }
+
+/* índice */
+.toc { list-style: none; }
+.toc li { display: flex; align-items: baseline; padding: .9mm 0; font-size: 8.6pt; }
+.toc li .d { flex: 1; border-bottom: .3mm dotted #888; margin: 0 1.5mm; transform: translateY(-1mm); }
+.toc li.part { font-family: "Anton"; text-transform: uppercase; font-size: 10.5pt; margin-top: 2mm; color: var(--br-green); }
+.toc li .pg { font-family: "Anton"; }
+
+.pending { background: #FFF3B0; border: .5mm dashed #B08900; padding: 1mm 2mm; font-size: 7.5pt; font-weight: 800; color: #6B5200; display: inline-block; }
+
+/* ---------- tabloide / TV ---------- */
+.content { }
+.stamp { position: absolute; top: 5mm; right: 9mm; border: .9mm solid var(--red); color: var(--red); font-family: "Anton";
+  font-size: 12pt; letter-spacing: .08em; padding: .6mm 2.5mm; transform: rotate(7deg); background: rgba(255,255,255,.85); z-index: 2; }
+.stamp.green { border-color: var(--br-green); color: var(--br-green); }
+.pull { font-family: "Anton"; font-size: 19pt; line-height: 1.05; text-transform: uppercase; border-top: 1.4mm solid var(--black);
+  border-bottom: .5mm solid var(--black); padding: 3mm 0 3mm 11mm; margin: 4mm 0; position: relative; }
+.pull::before { content: "“"; position: absolute; left: 0; top: -1mm; font-size: 46pt; color: var(--red); line-height: 1; }
+.pull .by { display: block; font-family: "Archivo"; font-weight: 800; font-size: 7.5pt; color: #555; text-transform: none; margin-top: 1.5mm; }
+.pull.green::before { color: var(--br-green); }
+.lower { display: flex; margin: 3mm 0; }
+.lower .lbl { background: var(--red); color: var(--white); font-family: "Anton"; font-size: 11pt; padding: 2mm 3mm; display: flex; align-items: center; }
+.lower .txt { background: var(--black); color: var(--white); font-family: "Anton"; text-transform: uppercase; font-size: 13pt; padding: 2.4mm 3mm; flex: 1; line-height: 1.3; }
+.lower .txt mark { color: var(--black); padding: 0 .8mm; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.footer .tick { flex: 1; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-right: 3mm; font-size: 7.4pt; }
+.footer .tick b { background: var(--red); color: var(--white); font-family: "Anton"; font-weight: 400; padding: .4mm 1.6mm; margin-right: 1.5mm; letter-spacing: .05em; }
+.sub-h { font-size: 11pt; font-weight: 600; color: #333; margin: -1mm 0 3mm; }
+.filler { margin-top: 3mm; }
+.filler .lower { margin: 0; }
+.crowdband { margin-bottom: 0; }
+.crowdband svg { width: 100%; height: auto; display: block; }
+/* fotos do autor */
+.photos { display: grid; gap: 2mm; margin: 2.5mm 0; }
+.photos.c2 { grid-template-columns: 1fr 1fr; }
+.photos.c3 { grid-template-columns: 1fr 1fr 1fr; }
+.photos figure { margin: 0; position: relative; }
+.photos img { width: 100%; height: 52mm; object-fit: cover; display: block; border: .8mm solid var(--black); }
+.photos.tall img { height: 70mm; }
+.photos .price { position: absolute; left: 1.5mm; top: 1.5mm; background: var(--red); color: var(--white); font-family: "Anton"; font-size: 13pt; padding: .4mm 2mm; }
+.photos .price.g { background: var(--br-green); }
+.photos figcaption { font-size: 6.8pt; margin-top: .8mm; }
+.stamp ~ h1, .stamp ~ h2 { padding-right: 24mm; }
+
+/* faixa patriota da capa */
+.cover .patriota { position: absolute; left: 0; right: 0; top: 76mm; background: var(--br-green); color: var(--white);
+  font-family: "Anton"; font-size: 11.5pt; letter-spacing: .06em; padding: 1.6mm 12mm; border-top: 1mm solid var(--br-yellow); border-bottom: 1mm solid var(--br-yellow); }
+.cover .patriota span { color: var(--br-yellow); }
+/* anexo de fontes */
+.fontes { list-style: none; font-size: 7.2pt; line-height: 1.3; }
+.fontes li { padding: .8mm 0; border-bottom: .2mm solid #ccc; }
+.fontes li b { font-family: "Anton"; font-weight: 400; color: var(--red); margin-right: 1.5mm; }
+
+/* capa: fundo da Esplanada + selo de autoridade */
+.cover .bg { position: absolute; inset: 0; }
+.cover .bg svg { width: 100%; height: 100%; display: block; }
+.cover .selo { position: absolute; top: 9mm; right: 9mm; width: 34mm; height: 34mm; border-radius: 50%;
+  background: var(--br-yellow); color: var(--black); border: 1.2mm solid var(--br-green); box-shadow: 0 0 0 .8mm var(--br-yellow);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; transform: rotate(10deg); padding: 3mm; }
+.cover .selo .s1 { font-family: "Anton"; font-size: 15pt; line-height: .95; color: var(--br-green); }
+.cover .selo .s2 { font-size: 5.6pt; font-weight: 800; line-height: 1.15; margin-top: 1mm; }
+.cover .sub { text-shadow: 0 0 2mm #000; }
+.cover .selo { top: 6mm; right: 7mm; width: 31mm; height: 31mm; padding: 4.5mm; transform: rotate(8deg); }
+.cover .selo .s1 { font-size: 13.5pt; line-height: 1.08; }
+.cover .selo .s2 { font-size: 5.3pt; line-height: 1.25; margin-top: 1.2mm; }
+.cover .sub { background: rgba(0,0,0,.55); padding: 2.5mm 3mm; text-shadow: none; }
+.cover .brand { left: 0; right: 0; bottom: 0; padding: 2.2mm 12mm; background: var(--black); }
+.box.br ul.check li::before { color: var(--br-yellow); }
+/* dossiê (Bônus B7) */
+.dossie { display: grid; grid-template-columns: 30mm 1fr 22mm; gap: 3mm; align-items: center; border-top: .6mm solid var(--black); padding: 2.5mm 0; }
+.d-num { background: var(--br-green); color: var(--br-yellow); font-family: "Anton"; font-size: 14pt; line-height: 1; padding: 2mm; text-align: center; }
+.d-num.red { background: var(--red); color: var(--white); }
+.d-tag { display: block; font-size: 7pt; letter-spacing: .08em; color: var(--white); margin-bottom: 1mm; }
+.d-h { font-weight: 800; font-size: 9.6pt; line-height: 1.2; margin: 0 0 1mm; }
+.d-l { font-size: 8.4pt; margin: 0 0 1mm; }
+.d-v { font-size: 7pt; color: #555; margin: 0; }
+.d-qr svg { width: 22mm; height: 22mm; display: block; }
+.d-h a { color: inherit; text-decoration: none; }
+
+/* Manchete de capa "EXTRA" (guia) */
+.extra { background: var(--red); color: var(--white); }
+.extra .ex-tag { position: absolute; top: 18mm; left: 12mm; background: var(--yellow); color: var(--black); font-family: "Anton"; font-size: 30pt; padding: 1mm 5mm; transform: rotate(-3deg); }
+.extra .ex-h { position: absolute; left: 12mm; right: 12mm; top: 48mm; font-family: "Anton"; font-size: 54pt; line-height: 1.05; text-transform: uppercase; }
+.extra .ex-h mark { background: none; color: var(--yellow); padding: 0; text-shadow: .8mm .8mm 0 var(--black); }
+.extra .ex-sub { position: absolute; left: 12mm; right: 12mm; bottom: 62mm; font-size: 13pt; font-weight: 700; }
+.extra .ex-st { position: absolute; right: 10mm; bottom: 26mm; border: 1.2mm solid var(--white); color: var(--white); font-family: "Anton"; font-size: 22pt; padding: 1mm 4mm; transform: rotate(-8deg); }
+
+/* Frases de efeito (cards para print) */
+.frases { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin-top: 3mm; }
+.frase { background: var(--black); color: var(--white); font-family: "Anton"; font-size: 15pt; line-height: 1.05; text-transform: uppercase; padding: 4mm; border-left: 2mm solid var(--br-yellow); }
+.frase.v { background: var(--red); border-left-color: var(--yellow); }
+.frase.g { background: var(--br-green); border-left-color: var(--br-yellow); }
+.frase small { display: block; font-family: "Archivo"; font-weight: 800; font-size: 7pt; text-transform: none; color: var(--br-yellow); margin-top: 2mm; }
+.frase.v small { color: var(--yellow); }
+
+td.n, th.n { white-space: nowrap; }

@@ -1,0 +1,19 @@
+{
+  "name": "lula-ganhou-curso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "python3 build/gen_svg.py && python3 build/assemble.py && node build/fill.js && node build/check.js && node build/render.js && python3 build/todocx.py",
+    "build:dossie": "BOOK_FILES=dossie/00-capa.html,dossie/01-guia.html,09-zz-b7-dossie.html,dossie/99-contra.html BOOK_HTML=dossie.html BOOK_OUT=Guia-Como-Convencer-um-Petista BOOK_TITLE='Como convencer um petista · Patriota Anônimo' sh -c 'python3 build/assemble.py && node build/fill.js && node build/check.js && node build/render.js && python3 build/todocx.py'",
+    "build:all": "npm run build && npm run build:dossie"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource/anton": "^5.3.0",
+    "@fontsource/archivo": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0"
+  }
+}
