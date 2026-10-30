@@ -5,7 +5,7 @@ author: "Patriota Anônimo"
 
 # Kit de Vendas
 
-Produto: e-book **LULA GANHOU. PRA ONDE IR?** · R$ 19,99 · PDF + Word · grupo VIP · atualizações por 12 meses · garantia de 7 dias (CDC, art. 49).
+Produto: e-book **LULA GANHOU. PRA ONDE IR?** · R$ 19,99 · PDF + Word · atualizações por 12 meses · garantia de 7 dias (CDC, art. 49).
 
 Brinde para quem compra: **Como convencer um petista** (57 páginas: método de conversa, 12 objeções com resposta e dado, roteiros de WhatsApp e o dossiê de 19 manchetes com QR code). Também pode virar isca grátis para captar contatos.
 
@@ -80,14 +80,14 @@ Estrutura: gancho emocional (0–3 s) → dado com fonte na tela (3–12 s) → 
 Mais 4 anos. Você vai ficar? 🇧🇷 Eu mostro o caminho para levar seu dinheiro, dentro da lei, para um país com governo de direita onde ele vale mais. Comente **BOLIVIA** que eu te mando o link.
 
 **DM automática (quem comentar BOLIVIA):**
-Fala, patriota! Aqui está o e-book **LULA GANHOU. PRA ONDE IR?**: o Método USDT passo a passo + a vida na Bolívia + grupo VIP. R$ 19,99, com garantia de 7 dias. 👉 [LINK DO CHECKOUT]
+Fala, patriota! Aqui está o e-book **LULA GANHOU. PRA ONDE IR?**: o Método USDT passo a passo + a vida na Bolívia + o brinde “Como convencer um petista”. R$ 19,99, com garantia de 7 dias. 👉 [LINK DO CHECKOUT]
 
 ## 5 e-mails pós-compra
 
 ### E-mail 1 · Boas-vindas (imediato)
-**Assunto:** Seu e-book chegou. Entre no grupo VIP
+**Assunto:** Seu e-book chegou
 
-Bem-vindo, patriota. Seu e-book está aqui: [LINK DO PDF] (e a versão Word: [LINK DO DOCX]). Entre agora na comunidade VIP: [LINK DO GRUPO]. Comece pela página “Como usar o curso” e escolha a sua trilha.
+Bem-vindo, patriota. Seu e-book está aqui: [LINK DO PDF] (e a versão Word: [LINK DO DOCX]). Comece pela página “Como usar o curso” e escolha a sua trilha.
 
 ### E-mail 2 · Trilha rápida (dia 1)
 **Assunto:** Só quer proteger o dinheiro? Comece pela Parte 3
@@ -109,18 +109,7 @@ Leia a Parte 5. Regra de ouro do P2P: só libere o USDT com o dinheiro na sua co
 
 Responda este e-mail contando o seu resultado. Com a sua autorização, ele pode ajudar outros patriotas a dar o primeiro passo.
 
-## Plano do grupo VIP
-
-| Frequência | Conteúdo |
-|---|---|
-| Diário (seg–sex) | Cotação do dia: USDT/BRL, USDT/BOB, dólar oficial BCB |
-| Semanal | 1 oportunidade real (imóvel ou carro anunciado em Bs) + 1 dica do método |
-| Mensal | Resumo de mudanças de regras (BCB, Receita, Bolívia) |
-| Trimestral | Nova versão do PDF |
-
-**Regras fixadas:** sem venda de câmbio entre membros, sem pedir ou oferecer P2P no grupo, sem política partidária fora do tema, nenhum admin manda mensagem privada pedindo dinheiro.
-
 ## Pendências do kit
 
-- [LINK DO CHECKOUT], [LINK DO PDF], [LINK DO DOCX], [LINK DO GRUPO].
+- [LINK DO CHECKOUT]. O PDF e o Word são entregues pela própria Hotmart (área de membros e e-mail de compra).
 - Definir se o guia “Como convencer um petista” fica só como brinde ou também como isca grátis.
