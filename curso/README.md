@@ -11,4 +11,4 @@ Build: `npm install && npm run build` (curso) · `npm run build:dossie` (brinde:
 - `build/check.js`: falha se algum conteúdo chegar a menos de 4 mm do rodapé.
 - `build/render.js`: PDF A5. `build/todocx.py`: Word via pandoc.
 
-Status: e-book fechado (243 páginas), brinde “Como convencer um petista” (57 páginas) e kit de vendas. Faltam só os links (grupo VIP e checkout) — ver `vendas/Pendencias-do-Autor.md`.
+Status: e-book fechado (241 páginas), brinde “Como convencer um petista” (57 páginas) e kit de vendas. Faltam só os links (grupo VIP e checkout) — ver `vendas/Pendencias-do-Autor.md`.
