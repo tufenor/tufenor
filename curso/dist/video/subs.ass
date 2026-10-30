@@ -1,0 +1,74 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter Display Black,98,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,8,4,2,60,60,470,1
+Style: Hook,Anton,128,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,1,0,1,8,0,8,60,60,190,1
+Style: Tag,Anton,54,&H00FFFFFF,&H00FFFFFF,&H001C19D7,&H001C19D7,0,0,0,0,100,100,2,0,3,14,0,8,60,60,120,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 2,0:00:00.00,0:00:03.00,Tag,,0,0,0,,{\fad(150,200)}● E-BOOK PATRIOTA
+Dialogue: 2,0:00:00.00,0:00:03.00,Hook,,0,0,0,,{\fad(0,250)\fscx70\fscy70\t(0,180,\fscx100\fscy100)}LULA GANHOU.\N{\c&H00DFFF&}PRA ONDE IR?
+Dialogue: 1,0:00:00.00,0:00:01.54,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}SÓ{\c&HFFFFFF&\fscx100\fscy100} TAVA NAVEGANDO
+Dialogue: 1,0:00:01.54,0:00:02.02,Cap,,0,0,0,,SÓ {\c&H00DFFF&\fscx112\fscy112}TAVA{\c&HFFFFFF&\fscx100\fscy100} NAVEGANDO
+Dialogue: 1,0:00:02.02,0:00:02.79,Cap,,0,0,0,,SÓ TAVA {\c&H00DFFF&\fscx112\fscy112}NAVEGANDO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:02.64,0:00:03.07,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}AQUI{\c&HFFFFFF&\fscx100\fscy100} EU ENCONTREI
+Dialogue: 1,0:00:03.07,0:00:03.31,Cap,,0,0,0,,AQUI {\c&H00DFFF&\fscx112\fscy112}EU{\c&HFFFFFF&\fscx100\fscy100} ENCONTREI
+Dialogue: 1,0:00:03.31,0:00:04.38,Cap,,0,0,0,,AQUI EU {\c&H00DFFF&\fscx112\fscy112}ENCONTREI{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:04.23,0:00:04.53,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}ESSE{\c&HFFFFFF&\fscx100\fscy100} CURSO AQUI
+Dialogue: 1,0:00:04.53,0:00:04.89,Cap,,0,0,0,,ESSE {\c&H00DFFF&\fscx112\fscy112}CURSO{\c&HFFFFFF&\fscx100\fscy100} AQUI
+Dialogue: 1,0:00:04.89,0:00:06.12,Cap,,0,0,0,,ESSE CURSO {\c&H00DFFF&\fscx112\fscy112}AQUI{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:06.13,0:00:06.46,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}NOSSA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:06.47,0:00:06.97,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}MUDOU{\c&HFFFFFF&\fscx100\fscy100} MEU PENSAMENTO
+Dialogue: 1,0:00:06.97,0:00:07.19,Cap,,0,0,0,,MUDOU {\c&H00DFFF&\fscx112\fscy112}MEU{\c&HFFFFFF&\fscx100\fscy100} PENSAMENTO
+Dialogue: 1,0:00:07.19,0:00:08.10,Cap,,0,0,0,,MUDOU MEU {\c&H00DFFF&\fscx112\fscy112}PENSAMENTO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:08.15,0:00:08.43,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}LULA{\c&HFFFFFF&\fscx100\fscy100} GANHOU
+Dialogue: 1,0:00:08.43,0:00:09.04,Cap,,0,0,0,,LULA {\c&H00DFFF&\fscx112\fscy112}GANHOU{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:09.15,0:00:09.35,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}AGORA{\c&HFFFFFF&\fscx100\fscy100} PARA ONDE
+Dialogue: 1,0:00:09.35,0:00:09.61,Cap,,0,0,0,,AGORA {\c&H00DFFF&\fscx112\fscy112}PARA{\c&HFFFFFF&\fscx100\fscy100} ONDE
+Dialogue: 1,0:00:09.61,0:00:10.30,Cap,,0,0,0,,AGORA PARA {\c&H00DFFF&\fscx112\fscy112}ONDE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:10.15,0:00:10.60,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}IR?{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:10.65,0:00:11.41,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}ENSINA{\c&HFFFFFF&\fscx100\fscy100} MUITA COISA
+Dialogue: 1,0:00:11.41,0:00:11.79,Cap,,0,0,0,,ENSINA {\c&H00DFFF&\fscx112\fscy112}MUITA{\c&HFFFFFF&\fscx100\fscy100} COISA
+Dialogue: 1,0:00:11.79,0:00:12.32,Cap,,0,0,0,,ENSINA MUITA {\c&H00DFFF&\fscx112\fscy112}COISA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:12.30,0:00:13.02,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}E{\c&HFFFFFF&\fscx100\fscy100} CASO A
+Dialogue: 1,0:00:13.02,0:00:13.36,Cap,,0,0,0,,E {\c&H00DFFF&\fscx112\fscy112}CASO{\c&HFFFFFF&\fscx100\fscy100} A
+Dialogue: 1,0:00:13.36,0:00:13.71,Cap,,0,0,0,,E CASO {\c&H00DFFF&\fscx112\fscy112}A{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:13.56,0:00:13.66,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}PESSOA{\c&HFFFFFF&\fscx100\fscy100} NÃO QUEIRA
+Dialogue: 1,0:00:13.66,0:00:13.86,Cap,,0,0,0,,PESSOA {\c&H00DFFF&\fscx112\fscy112}NÃO{\c&HFFFFFF&\fscx100\fscy100} QUEIRA
+Dialogue: 1,0:00:13.86,0:00:14.17,Cap,,0,0,0,,PESSOA NÃO {\c&H00DFFF&\fscx112\fscy112}QUEIRA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:14.02,0:00:14.32,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}MUDAR{\c&HFFFFFF&\fscx100\fscy100} DE PAÍS
+Dialogue: 1,0:00:14.32,0:00:14.54,Cap,,0,0,0,,MUDAR {\c&H00DFFF&\fscx112\fscy112}DE{\c&HFFFFFF&\fscx100\fscy100} PAÍS
+Dialogue: 1,0:00:14.54,0:00:14.93,Cap,,0,0,0,,MUDAR DE {\c&H00DFFF&\fscx112\fscy112}PAÍS{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:14.78,0:00:15.12,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}TAMBÉM{\c&HFFFFFF&\fscx100\fscy100} ENSINA INCLUSIVE
+Dialogue: 1,0:00:15.12,0:00:15.52,Cap,,0,0,0,,TAMBÉM {\c&H00DFFF&\fscx112\fscy112}ENSINA{\c&HFFFFFF&\fscx100\fscy100} INCLUSIVE
+Dialogue: 1,0:00:15.52,0:00:16.35,Cap,,0,0,0,,TAMBÉM ENSINA {\c&H00DFFF&\fscx112\fscy112}INCLUSIVE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:16.33,0:00:16.47,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}COMO{\c&HFFFFFF&\fscx100\fscy100} A PESSOA
+Dialogue: 1,0:00:16.47,0:00:16.61,Cap,,0,0,0,,COMO {\c&H00DFFF&\fscx112\fscy112}A{\c&HFFFFFF&\fscx100\fscy100} PESSOA
+Dialogue: 1,0:00:16.61,0:00:17.10,Cap,,0,0,0,,COMO A {\c&H00DFFF&\fscx112\fscy112}PESSOA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:16.95,0:00:17.23,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}FAZ{\c&HFFFFFF&\fscx100\fscy100} PRA PROTEGER
+Dialogue: 1,0:00:17.23,0:00:17.59,Cap,,0,0,0,,FAZ {\c&H00DFFF&\fscx112\fscy112}PRA{\c&HFFFFFF&\fscx100\fscy100} PROTEGER
+Dialogue: 1,0:00:17.59,0:00:18.14,Cap,,0,0,0,,FAZ PRA {\c&H00DFFF&\fscx112\fscy112}PROTEGER{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:17.99,0:00:18.21,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}O{\c&HFFFFFF&\fscx100\fscy100} PATRIMÔNIO EM
+Dialogue: 1,0:00:18.21,0:00:18.65,Cap,,0,0,0,,O {\c&H00DFFF&\fscx112\fscy112}PATRIMÔNIO{\c&HFFFFFF&\fscx100\fscy100} EM
+Dialogue: 1,0:00:18.65,0:00:18.98,Cap,,0,0,0,,O PATRIMÔNIO {\c&H00DFFF&\fscx112\fscy112}EM{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:18.83,0:00:19.76,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}DÓLAR{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:19.70,0:00:20.50,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}EU{\c&HFFFFFF&\fscx100\fscy100} RECOMENDO MUITO
+Dialogue: 1,0:00:20.50,0:00:20.96,Cap,,0,0,0,,EU {\c&H00DFFF&\fscx112\fscy112}RECOMENDO{\c&HFFFFFF&\fscx100\fscy100} MUITO
+Dialogue: 1,0:00:20.96,0:00:21.43,Cap,,0,0,0,,EU RECOMENDO {\c&H00DFFF&\fscx112\fscy112}MUITO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:21.38,0:00:21.56,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}SÓ{\c&HFFFFFF&\fscx100\fscy100} CUSTA R$ 19,99
+Dialogue: 1,0:00:21.56,0:00:21.92,Cap,,0,0,0,,SÓ {\c&H00DFFF&\fscx112\fscy112}CUSTA{\c&HFFFFFF&\fscx100\fscy100} R$ 19,99
+Dialogue: 1,0:00:21.92,0:00:22.23,Cap,,0,0,0,,SÓ CUSTA {\c&H00DFFF&\fscx112\fscy112}R$ 19,99{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:22.98,0:00:23.20,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}O{\c&HFFFFFF&\fscx100\fscy100} PREÇO É
+Dialogue: 1,0:00:23.20,0:00:23.34,Cap,,0,0,0,,O {\c&H00DFFF&\fscx112\fscy112}PREÇO{\c&HFFFFFF&\fscx100\fscy100} É
+Dialogue: 1,0:00:23.34,0:00:23.61,Cap,,0,0,0,,O PREÇO {\c&H00DFFF&\fscx112\fscy112}É{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:23.46,0:00:23.78,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}MUITO{\c&HFFFFFF&\fscx100\fscy100} BAIXO
+Dialogue: 1,0:00:23.78,0:00:24.33,Cap,,0,0,0,,MUITO {\c&H00DFFF&\fscx112\fscy112}BAIXO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:24.50,0:00:24.60,Cap,,0,0,0,,{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}{\c&H00DFFF&\fscx112\fscy112}VALE{\c&HFFFFFF&\fscx100\fscy100} A PENA
+Dialogue: 1,0:00:24.60,0:00:24.80,Cap,,0,0,0,,VALE {\c&H00DFFF&\fscx112\fscy112}A{\c&HFFFFFF&\fscx100\fscy100} PENA
+Dialogue: 1,0:00:24.80,0:00:25.17,Cap,,0,0,0,,VALE A {\c&H00DFFF&\fscx112\fscy112}PENA{\c&HFFFFFF&\fscx100\fscy100}
