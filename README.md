@@ -67,6 +67,8 @@ Páginas estáticas e estudos de frontend. É onde testei composição, tipograf
 
 As ilustrações desta página são **diagramas conceituais**, não capturas das interfaces dos produtos.
 
+Também publiquei um **case do processo**: como montei uma operação de prospecção e entrega com agentes de IA, o que funcionou, o que falhou e o que deliberadamente não automatizei. [Ler o case](https://tufenor.github.io/portfolio/projeto/).
+
 ## Repositórios públicos
 
 | Repositório | Linguagem | O que você encontra |
