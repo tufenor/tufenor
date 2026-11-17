@@ -32,8 +32,8 @@ Assistente pessoal em desenvolvimento, com foco em **processamento local**, voz 
 |---|---|
 | **Meu trabalho** | Experiência de interação, painel de controle, integrações e diagnóstico |
 | **Tecnologias** | Python, FastAPI, Kotlin/Compose, MicroPython |
-| **Estágio** | Em desenvolvimento; o código é privado por conter configurações e credenciais pessoais |
-| **O que falta** | Publicação de uma versão sanitizada, sem chaves e sem dados locais |
+| **Código** | [tufenor/jarvis](https://github.com/tufenor/jarvis) — núcleo, firmware e app Android |
+| **Estágio** | Em desenvolvimento; configuração e credenciais ficam fora do repositório |
 
 O aprendizado que carrego dele: automação de verdade precisa de **limites explícitos**, confirmação antes de ações destrutivas e logs que expliquem o que falhou.
 
@@ -47,7 +47,8 @@ Sistema de gestão de academia em desenvolvimento, com **API FastAPI**, **Postgr
 |---|---|
 | **Meu trabalho** | Modelagem de dados, fluxos de gestão e coerência entre telas e API |
 | **Tecnologias** | Python, FastAPI, PostgreSQL, HTML/CSS/JavaScript |
-| **Estágio** | Em desenvolvimento; código privado |
+| **Código** | [tufenor/frequency](https://github.com/tufenor/frequency) — API, frontend e manual do cliente |
+| **Estágio** | Em desenvolvimento; dados de academia e backups ficam fora do repositório |
 | **Foco de produto** | Tornar tarefas administrativas compreensíveis na interface, não só funcionais |
 
 Cada funcionalidade tem seu próprio estágio de validação — a apresentação aqui descreve o projeto em construção, não um produto lançado.
@@ -74,10 +75,13 @@ As ilustrações desta página são **diagramas conceituais**, não capturas das
 | [Site-Apresentacao](https://github.com/tufenor/Site-Apresentacao) | JavaScript | Site de apresentação com foco mobile |
 | [Alura-Plus](https://github.com/tufenor/Alura-Plus) | HTML | Estudo de frontend |
 | [Exercicios-de-treino-js](https://github.com/tufenor/Exercicios-de-treino-js) | HTML | Exercícios de prática em JavaScript |
+| [jarvis](https://github.com/tufenor/jarvis) | Python | Núcleo do assistente, firmware ESP32 e app Android |
+| [frequency](https://github.com/tufenor/frequency) | Python | Gestão de academia: API FastAPI, frontend React e manual |
+| [portfolio](https://github.com/tufenor/portfolio) | HTML | Vitrine e demonstração de correção de responsividade |
 | [openclaw-server](https://github.com/tufenor/openclaw-server) | — | Repositório de experimentação; README mínimo |
 | [rea](https://github.com/tufenor/rea) | — | Exploração de engenharia reversa com agentes. O projeto original é [REA, de morluto](https://github.com/morluto/rea); consulte a documentação e a autoria de lá |
 
-Os projetos JARVIS e Frequency **não têm repositório público** — são ambientes pessoais com configuração e dados sensíveis. Prefiro dizer isso a publicar um recorte quebrado só para preencher a grade.
+Os dois projetos têm repositório público com o código-fonte. O que fica de fora é o que não pode ser público: banco de dados, backups, credenciais, configuração de máquina e dados de academia.
 
 ## Como trabalho com IA
 
