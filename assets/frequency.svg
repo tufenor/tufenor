@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">Frequency — interfaces para fluxos de gestão</title>
+  <desc id="desc">Diagrama conceitual de uma interface de gestão com navegação para painel, alunos e acessos. Não é captura do produto.</desc>
+  <rect width="1200" height="280" rx="8" fill="#202723"/>
+  <path d="M0 0h8v280H0z" fill="#b9ce9c"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="40" y="48" font-size="13" letter-spacing="2.2" fill="#b9ce9c">02 / EXPERIÊNCIA DE PRODUTO</text>
+    <text x="40" y="100" font-size="40" font-weight="600" letter-spacing="-1" fill="#f5f1e7">Frequency</text>
+    <text x="40" y="139" font-size="19" fill="#d8ddd2">Fluxos de gestão.</text>
+    <text x="40" y="168" font-size="19" fill="#d8ddd2">Uma interface para organizar.</text>
+    <text x="40" y="238" font-size="13" letter-spacing="1.4" fill="#b9ce9c">EM DESENVOLVIMENTO</text>
+  </g>
+  <g stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="532" y="36" width="628" height="208" rx="6" fill="#f5f1e7" stroke="none"/>
+    <path d="M532 73h628" stroke="#cbd0c4"/>
+    <circle cx="550" cy="55" r="3" fill="#546d46"/>
+    <path d="M564 55h55M1118 55h22" stroke="#809171"/>
+    <rect x="548" y="89" width="136" height="139" rx="3" fill="#e5e8db" stroke="none"/>
+    <rect x="560" y="101" width="112" height="31" rx="3" fill="#2e4935" stroke="none"/>
+    <g fill="none" stroke="#d1ddbf"><path d="M572 111h6v10h-6zM582 107h6v14h-6z"/></g>
+    <g fill="none" stroke="#617a52">
+      <circle cx="579" cy="152" r="4"/><path d="M571 165c0-8 16-8 16 0"/>
+      <path d="M574 186h13m-13 7h9m-9 7h13"/>
+    </g>
+    <path d="M706 98h156M706 112h104" fill="none" stroke="#546d46"/>
+    <rect x="706" y="134" width="432" height="38" rx="3" fill="#e5e8db" stroke="none"/>
+    <rect x="706" y="184" width="432" height="38" rx="3" fill="#e5e8db" stroke="none"/>
+    <g fill="none" stroke="#809171">
+      <circle cx="726" cy="153" r="6"/><path d="M746 150h96M746 157h62M1098 153h21m-7-6 7 6-7 6"/>
+      <circle cx="726" cy="203" r="6"/><path d="M746 200h126M746 207h86M1098 203h21m-7-6 7 6-7 6"/>
+    </g>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="13">
+    <text x="600" y="121" fill="#f5f1e7">Painel</text>
+    <text x="600" y="160" fill="#4c5b50">Alunos</text>
+    <text x="600" y="198" fill="#4c5b50">Acessos</text>
+    <text x="1138" y="108" text-anchor="end" fill="#546d46">FLUXO CONCEITUAL</text>
+  </g>
+</svg>

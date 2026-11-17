@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">Web — hierarquia, navegação e adaptação mobile</title>
+  <desc id="desc">Diagrama conceitual de uma página em desktop e celular com a mesma hierarquia de conteúdo.</desc>
+  <rect width="1200" height="280" rx="8" fill="#e5e8db"/>
+  <path d="M0 0h8v280H0z" fill="#2e4935"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="40" y="48" font-size="13" letter-spacing="2.2" fill="#546d46">03 / INTERFACES WEB</text>
+    <text x="40" y="100" font-size="40" font-weight="600" letter-spacing="-1" fill="#202723">Clareza em cada tela.</text>
+    <text x="40" y="139" font-size="19" fill="#4c5b50">Conteúdo, navegação e código.</text>
+    <text x="40" y="168" font-size="19" fill="#4c5b50">Do desktop ao celular.</text>
+    <text x="40" y="238" font-size="13" letter-spacing="1.4" fill="#546d46">HTML / CSS / JAVASCRIPT</text>
+  </g>
+  <g stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="572" y="36" width="410" height="208" rx="6" fill="#fffdf7" stroke="#809171"/>
+    <path d="M572 72h410" stroke="#cbd0c4"/>
+    <path d="M590 54h32M880 54h24M918 54h24" stroke="#809171"/>
+    <path d="M596 102h150M596 118h120" stroke="#26372c"/>
+    <path d="M596 144h162M596 156h144" stroke="#809171"/>
+    <rect x="596" y="178" width="80" height="24" rx="3" fill="#2e4935" stroke="none"/>
+    <rect x="790" y="94" width="168" height="108" rx="3" fill="#d1ddbf" stroke="none"/>
+    <path d="m820 158 23-26 23 14 30-29 34 52H815" fill="none" stroke="#617a52"/>
+    <path d="M596 222h362" stroke="#cbd0c4"/>
+    <path d="M982 140h34" stroke="#809171"/>
+    <path d="m1009 134 7 6-7 6" fill="none" stroke="#809171"/>
+    <rect x="1032" y="36" width="128" height="208" rx="12" fill="#fffdf7" stroke="#809171"/>
+    <path d="M1084 49h24M1048 70h28M1130 68h14m-14 5h14" stroke="#809171"/>
+    <path d="M1048 92h94M1048 105h76" stroke="#26372c"/>
+    <path d="M1048 122h94M1048 132h86" stroke="#809171"/>
+    <rect x="1048" y="146" width="64" height="19" rx="3" fill="#2e4935" stroke="none"/>
+    <rect x="1048" y="178" width="96" height="40" rx="3" fill="#d1ddbf" stroke="none"/>
+    <path d="M1085 232h22" stroke="#809171"/>
+  </g>
+</svg>

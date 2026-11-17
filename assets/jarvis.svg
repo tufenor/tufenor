@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">JARVIS — interação e automação local</title>
+  <desc id="desc">Diagrama conceitual: voz e interface se conectam ao núcleo local, ao computador e aos dispositivos. Projeto em desenvolvimento.</desc>
+  <rect width="1200" height="280" rx="8" fill="#f5f1e7"/>
+  <path d="M0 0h8v280H0z" fill="#2e4935"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="40" y="48" font-size="13" letter-spacing="2.2" fill="#546d46">01 / SISTEMAS CONECTADOS</text>
+    <text x="40" y="100" font-size="40" font-weight="600" letter-spacing="-1" fill="#202723">J.A.R.V.I.S.</text>
+    <text x="40" y="139" font-size="19" fill="#4c5b50">Interação simples.</text>
+    <text x="40" y="168" font-size="19" fill="#4c5b50">Automação sob controle.</text>
+    <text x="40" y="238" font-size="13" letter-spacing="1.4" fill="#546d46">EM DESENVOLVIMENTO</text>
+  </g>
+  <g fill="none" stroke="#809171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M652 100h64v40h44M652 200h64v-60M936 140h48v-40h36M984 140v60h36"/>
+    <rect x="532" y="68" width="120" height="64" rx="5" fill="#fffdf7"/>
+    <path d="M548 93v14m8-22v30m8-36v42m8-31v21" stroke="#2e4935"/>
+    <rect x="532" y="168" width="120" height="64" rx="5" fill="#fffdf7"/>
+    <rect x="546" y="184" width="30" height="26" rx="3" stroke="#2e4935"/>
+    <path d="M546 191h30M553 198h8M553 204h14" stroke="#2e4935"/>
+    <rect x="760" y="92" width="176" height="96" rx="6" fill="#2e4935" stroke="#2e4935"/>
+    <path d="M824 118h48v40h-48zM816 126h8m-8 12h8m-8 12h8m48-24h8m-8 12h8m-8 12h8m-44-40v8m12-8v8m12-8v8m-24 40v8m12-8v8m12-8v8" stroke="#d1ddbf"/>
+    <rect x="1020" y="68" width="140" height="64" rx="5" fill="#fffdf7"/>
+    <path d="M1036 85h29v22h-29zM1045 107v8m-7 0h23" stroke="#2e4935"/>
+    <rect x="1020" y="168" width="140" height="64" rx="5" fill="#fffdf7"/>
+    <rect x="1038" y="181" width="19" height="36" rx="3" stroke="#2e4935"/>
+    <path d="M1045 211h5m16-20h12v14h-12" stroke="#2e4935"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#202723">
+    <text x="590" y="105">Voz</text>
+    <text x="590" y="205">UI</text>
+    <text x="848" y="214" text-anchor="middle" fill="#4c5b50">Núcleo local</text>
+    <text x="1080" y="105">Desktop</text>
+    <text x="1088" y="205">Devices</text>
+  </g>
+</svg>
