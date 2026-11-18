@@ -1,0 +1,23 @@
+name: Sugestão para o perfil
+description: Proponha uma melhoria de organização, acessibilidade, conteúdo ou código.
+title: "[IDEIA] "
+labels: ["ideia", "triagem"]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: Arquivo ou seção
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Sugestão
+      description: Explique o que mudaria e por quê.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidência ou exemplo
+      description: Inclua uma referência pública, captura sanitizada ou critério de aceite.

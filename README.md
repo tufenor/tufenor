@@ -20,6 +20,10 @@ Trabalho principalmente com **HTML, CSS, JavaScript, React, Python e FastAPI**, 
 
 > Este perfil é um retrato honesto do que existe hoje. Projetos privados aparecem descritos, não publicados; estudos aparecem como estudos. Não há métricas de conversão, depoimentos ou clientes inventados.
 
+## Como sugerir código
+
+Você pode propor uma melhoria de conteúdo, acessibilidade ou código abrindo uma [issue de melhoria](../../issues/new?template=feature_request.yml). A ideia deve apontar o arquivo ou seção afetada e explicar como validar o resultado.
+
 ## Projetos
 
 ### J.A.R.V.I.S. — assistente pessoal para Windows
