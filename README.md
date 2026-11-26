@@ -75,6 +75,8 @@ Também publiquei um **case do processo**: como montei uma operação de prospec
 
 O **Radar global MoneyIA** é um recorte público e sanitizado da etapa de descoberta: normalização de oportunidades, ranking, fila de revisão visual e retomada de verificações humanas. [Ler o case do Radar](https://tufenor.github.io/portfolio/case/moneyia-radar.html). Os números são da execução local em modo sombra; não representam clientes, contratos ou receita.
 
+Também publiquei um recorte da ponte de continuidade entre a Mesa e o JARVIS: fila local, fallback opcional e exigência de evidência antes de marcar um envio como confirmado. [Ler o case da ponte JARVIS](https://tufenor.github.io/portfolio/case/moneyia-jarvis-bridge-2026-11-26.html). O runtime e as credenciais pessoais não fazem parte do case público.
+
 ## Repositórios públicos
 
 | Repositório | Linguagem | O que você encontra |
