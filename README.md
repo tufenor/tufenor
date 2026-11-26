@@ -73,6 +73,8 @@ As ilustrações desta página são **diagramas conceituais**, não capturas das
 
 Também publiquei um **case do processo**: como montei uma operação de prospecção e entrega com agentes de IA, o que funcionou, o que falhou e o que deliberadamente não automatizei. [Ler o case](https://tufenor.github.io/portfolio/projeto/).
 
+O **Radar global MoneyIA** é um recorte público e sanitizado da etapa de descoberta: normalização de oportunidades, ranking, fila de revisão visual e retomada de verificações humanas. [Ler o case do Radar](https://tufenor.github.io/portfolio/case/moneyia-radar.html). Os números são da execução local em modo sombra; não representam clientes, contratos ou receita.
+
 ## Repositórios públicos
 
 | Repositório | Linguagem | O que você encontra |
