@@ -24,6 +24,10 @@ Trabalho principalmente com **HTML, CSS, JavaScript, React, Python e FastAPI**, 
 
 Você pode propor uma melhoria de conteúdo, acessibilidade ou código abrindo uma [issue de melhoria](../../issues/new?template=feature_request.yml). A ideia deve apontar o arquivo ou seção afetada e explicar como validar o resultado.
 
+## Estudos interativos
+
+- [Auréa — estudo de UX para loja de joias](https://tufenor.github.io/portfolio/demos/atelier-aurora/): catálogo responsivo com busca, filtros, sacola demonstrativa e conteúdo editável. Marca e produtos fictícios; fotografia licenciada; sem checkout, integração Nuvemshop ou resultados de CRO.
+
 ## Projetos
 
 ### J.A.R.V.I.S. — assistente pessoal para Windows
