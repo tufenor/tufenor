@@ -41,6 +41,23 @@ Assistente pessoal em desenvolvimento, com foco em **processamento local**, voz 
 
 O aprendizado que carrego dele: automação de verdade precisa de **limites explícitos**, confirmação antes de ações destrutivas e logs que expliquem o que falhou.
 
+### MoneyIA — mesa de oportunidades e agentes
+
+![MoneyIA — fila de oportunidades, aprovações e evidências](assets/moneyia.svg)
+
+Uma central local para organizar oportunidades, demos, aprovações, agentes e
+pendências humanas. O [snapshot público sanitizado do Control Center](moneyia-control-center/)
+mostra a arquitetura da fila, o fallback entre provedores e o pacote de
+publicação remota com HTTPS. Dados comerciais, e-mails, tokens e estados
+financeiros permanecem fora do portfólio.
+
+| | |
+|---|---|
+| **Meu trabalho** | Orquestração de fila, UX da Mesa, evidência e publicação segura |
+| **Tecnologias** | Node.js, HTML/CSS/JavaScript, FastAPI/JARVIS, Caddy |
+| **Case** | [Ponte MoneyIA + JARVIS](https://tufenor.github.io/portfolio/case/moneyia-jarvis-bridge-2026-11-26.html) |
+| **Estágio** | Mesa local e deploy remoto protegido verificados; envio externo depende de evidência da plataforma |
+
 ### Frequency — gestão de academia
 
 ![Frequency — esquema conceitual de navegação entre painel, alunos e acessos](assets/frequency.svg)

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">MoneyIA — fila de oportunidades e agentes</title>
+  <desc id="desc">Ilustração abstrata de uma fila de propostas conectada a agentes e uma verificação humana.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#10251b"/><stop offset="1" stop-color="#315b42"/></linearGradient>
+    <linearGradient id="card" x1="0" x2="1"><stop stop-color="#f4f8ef"/><stop offset="1" stop-color="#d7ebd2"/></linearGradient>
+  </defs>
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <path d="M84 254h1032" stroke="#a8db9f" stroke-opacity=".25" stroke-width="3"/>
+  <g fill="url(#card)" stroke="#a8db9f" stroke-width="3">
+    <rect x="92" y="86" width="300" height="128" rx="18"/>
+    <rect x="450" y="86" width="300" height="128" rx="18"/>
+    <rect x="808" y="86" width="300" height="128" rx="18"/>
+  </g>
+  <g fill="#315b42"><circle cx="130" cy="124" r="14"/><circle cx="488" cy="124" r="14"/><circle cx="846" cy="124" r="14"/></g>
+  <g stroke="#315b42" stroke-width="8" stroke-linecap="round"><path d="M162 124h170"/><path d="M520 124h170"/><path d="M878 124h170"/></g>
+  <g fill="#315b42" font-family="Arial, sans-serif" font-size="22" font-weight="700"><text x="118" y="173">Descoberta</text><text x="476" y="173">Agente</text><text x="834" y="173">Evidência</text></g>
+  <path d="M392 150h52M750 150h52" stroke="#c7f36a" stroke-width="7" stroke-linecap="round"/>
+  <text x="92" y="312" fill="#f4f8ef" font-family="Arial, sans-serif" font-size="28" font-weight="700">MONEYIA · controle claro para automação com IA</text>
+</svg>
