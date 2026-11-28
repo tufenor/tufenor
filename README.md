@@ -26,6 +26,8 @@ Você pode propor uma melhoria de conteúdo, acessibilidade ou código abrindo u
 
 ## Estudos interativos
 
+- [Lumen — painel de gestão](https://tufenor.github.io/portfolio/demos/lumen-kpi-dashboard/): estudo responsivo com indicadores, filtros, comparação de períodos, CSV local, edição no navegador e exportação. Marca e dados são fictícios; sem integração de backend. [Código editável](https://github.com/tufenor/portfolio/tree/main/demos/lumen-kpi-dashboard/).
+
 - [NexoPay — conceito SaaS de checkout e pagamentos](https://tufenor.github.io/portfolio/demos/nexopay-checkout-801047/): estudo independente com checkout, acesso e painel responsivos e navegáveis. Marca, produto, dados e métricas são fictícios; sem autenticação, cobrança ou gateway conectado. [Código editável](https://github.com/tufenor/portfolio/tree/main/demos/nexopay-checkout-801047/).
 
 - [morada — protótipo imobiliário](https://tufenor.github.io/portfolio/demos/prototipo-imobiliario/): estudo responsivo com compra e aluguel filtrados separadamente, busca por cidade/bairro, filtros de tipo/preço/quartos, favoritos locais, mapa ilustrativo e detalhes em modal. Marca, imóveis e valores fictícios; sem backend ou envio real. [Código editável](https://github.com/tufenor/portfolio/tree/main/demos/prototipo-imobiliario/).
