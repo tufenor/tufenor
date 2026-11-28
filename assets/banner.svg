@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
-  <title id="title">Gabriel de Moura Pereira — interfaces, software e automação</title>
+  <title id="title">tufenor — interfaces, software e automação</title>
   <desc id="desc">Capa editorial em grafite, creme e verde. Um desenho de interface se conecta a um pequeno sistema de componentes.</desc>
   <rect width="1200" height="400" fill="#202723"/>
   <path d="M0 0h12v400H0z" fill="#b9ce9c"/>
   <g font-family="Segoe UI, Arial, sans-serif">
-    <text x="64" y="66" font-size="16" letter-spacing="3" fill="#b9ce9c">GABRIEL DE MOURA PEREIRA</text>
+    <text x="64" y="66" font-size="16" letter-spacing="3" fill="#b9ce9c">tufenor</text>
     <text x="60" y="150" font-size="60" font-weight="600" letter-spacing="-2" fill="#f5f1e7">Da ideia à interface.</text>
     <text x="64" y="205" font-size="25" fill="#d8ddd2">Software, automação e experiências digitais.</text>
     <path d="M64 246h530" stroke="#536056"/>
