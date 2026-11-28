@@ -34,6 +34,8 @@ Você pode propor uma melhoria de conteúdo, acessibilidade ou código abrindo u
 
 - [Catálogo Studio — protótipo de catálogo e-commerce](https://tufenor.github.io/portfolio/demos/catalog-flow/): importação CSV local, edição e revisão de conteúdo e exportação JSON. Marca e dados fictícios; sugestão simulada, sem chamadas de IA ou integração com marketplace.
 
+- [ELOVINZE — estudo de apresentação para moda atacadista](https://tufenor.github.io/portfolio/demos/elovinze-presentation/): conceito independente responsivo, com imagens de referência identificadas, conteúdo editável via `content.js` e cartão digital demonstrativo. Não é site oficial nem projeto contratado; links de produtos/atendimento são locais e não enviam dados. [Código editável](https://github.com/tufenor/portfolio/tree/main/demos/elovinze-presentation/).
+
 ## Projetos
 
 ### J.A.R.V.I.S. — assistente pessoal para Windows
