@@ -26,6 +26,8 @@ Você pode propor uma melhoria de conteúdo, acessibilidade ou código abrindo u
 
 ## Estudos interativos
 
+- [morada — protótipo imobiliário](https://tufenor.github.io/portfolio/demos/prototipo-imobiliario/): estudo responsivo com compra e aluguel filtrados separadamente, busca por cidade/bairro, filtros de tipo/preço/quartos, favoritos locais, mapa ilustrativo e detalhes em modal. Marca, imóveis e valores fictícios; sem backend ou envio real. [Código editável](https://github.com/tufenor/portfolio/tree/main/demos/prototipo-imobiliario/).
+
 - [Volta — landing page de elétrica e automação](https://tufenor.github.io/portfolio/demos/voltaria-eletrica/): estudo responsivo com interações locais e conteúdo demonstrativo; sem envio de formulário, WhatsApp ou rastreamento.
 
 - [Auréa — estudo de UX para loja de joias](https://tufenor.github.io/portfolio/demos/atelier-aurora/): catálogo responsivo com busca, filtros, sacola demonstrativa e conteúdo editável. Marca e produtos fictícios; fotografia licenciada; sem checkout, integração Nuvemshop ou resultados de CRO.
