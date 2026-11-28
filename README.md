@@ -28,6 +28,8 @@ Você pode propor uma melhoria de conteúdo, acessibilidade ou código abrindo u
 
 - [Auréa — estudo de UX para loja de joias](https://tufenor.github.io/portfolio/demos/atelier-aurora/): catálogo responsivo com busca, filtros, sacola demonstrativa e conteúdo editável. Marca e produtos fictícios; fotografia licenciada; sem checkout, integração Nuvemshop ou resultados de CRO.
 
+- [Catálogo Studio — protótipo de catálogo e-commerce](https://tufenor.github.io/portfolio/demos/catalog-flow/): importação CSV local, edição e revisão de conteúdo e exportação JSON. Marca e dados fictícios; sugestão simulada, sem chamadas de IA ou integração com marketplace.
+
 ## Projetos
 
 ### J.A.R.V.I.S. — assistente pessoal para Windows
